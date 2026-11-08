@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flow Board — 王瑶 WANG YAO</title>
+<meta name="description" content="Flow Board：面向数字游民的未来移动与工作平台设计，一款可在城市中穿梭、又可快速转化为临时工作平台的多功能电动滑板。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body id="top">
+<div class="grain" aria-hidden="true"></div>
+<div class="proj-progress" aria-hidden="true"><i></i></div>
+
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a class="brand" href="../index.html">
+      <span class="brand__mark">WY</span>
+      <span class="brand__name">Wang Yao</span>
+    </a>
+    <nav class="nav__menu" id="menu">
+      <a href="../index.html#works">作品</a>
+      <a href="../index.html#approach">理念</a>
+      <a href="../index.html#about">关于</a>
+      <a href="../index.html#research">研究</a>
+      <a href="../index.html#contact">联系</a>
+    </nav>
+    <div class="nav__right">
+      <a class="btn btn--ghost" href="../index.html#works">全部作品 <span class="btn__arrow">↗</span></a>
+      <button class="nav__burger" id="burger" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="proj container" style="--pc:#E2513C; --pc-ink:#B93B28">
+
+  <!-- ================= HEAD ================= -->
+  <header class="proj-head">
+    <div class="proj-head__top">
+      <p class="eyebrow">Object Study — 01 / 05</p>
+      <p class="mono">2022 — 2023 · Nanjing Forestry University</p>
+    </div>
+
+    <div class="proj-head__main">
+      <div>
+        <h1 class="proj-title" data-split>Flow<br>Board</h1>
+        <p class="proj-sub">面向数字游民的未来移动与工作平台设计</p>
+        <p class="proj-sub-en">The design of future mobile and work platforms for digital nomads</p>
+        <ul class="proj-tags">
+          <li>数字游民</li>
+          <li>移动办公</li>
+          <li>模块化</li>
+          <li>电动滑板</li>
+        </ul>
+      </div>
+
+      <div class="proj-meta">
+        <div class="proj-meta__row"><span>Year</span><b>2022 — 2023</b></div>
+        <div class="proj-meta__row"><span>Unit</span><b>南京林业大学</b></div>
+        <div class="proj-meta__row"><span>Type</span><b>产品设计 / 移动平台</b></div>
+        <div class="proj-meta__row"><span>Method</span><b>桌面研究 · 建模 · 渲染</b></div>
+        <div class="proj-meta__foot">
+          <span class="barcode" aria-hidden="true"></span>
+          <span class="mono">Ref. WY—23—FB—01</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <figure class="proj-hero" data-drift>
+    <div class="proj-hero__frame pan" data-pan>
+      <img src="../assets/img/flow-hero.jpg" alt="Flow Board 整体形态渲染" fetchpriority="high">
+      <div class="proj-hero__hud">
+        <span class="mono">Fig. 01 — Overall form</span>
+        <span class="mono">KeyShot / 2023</span>
+      </div>
+    </div>
+    <figcaption class="proj-hero__cap">
+      <span>出行滑板形态 / 灵活办公形态</span>
+      <span>多功能电动滑板 · 一体化便携方案</span>
+    </figcaption>
+  </figure>
+
+  <!-- mobile module index -->
+  <nav class="proj-index" aria-label="模块索引">
+    <a href="#m01">01 简介</a>
+    <a href="#m02">02 研究</a>
+    <a href="#m03">03 洞察</a>
+    <a href="#m04">04 概念</a>
+    <a href="#m05">05 形态</a>
+    <a href="#m06">06 细节</a>
+    <a href="#m07">07 场景</a>
+    <a href="#m08">08 展板</a>
+  </nav>
+
+  <div class="proj-body">
+
+    <!-- ================= RAIL ================= -->
+    <aside class="proj-rail">
+      <p class="rail__title mono">Index / 模块</p>
+      <nav class="rail">
+        <a href="#m01" class="is-active"><i>01</i><b>设计简介</b></a>
+        <a href="#m02"><i>02</i><b>背景研究</b></a>
+        <a href="#m03"><i>03</i><b>需求洞察</b></a>
+        <a href="#m04"><i>04</i><b>概念发散</b></a>
+        <a href="#m05"><i>05</i><b>形态推演</b></a>
+        <a href="#m06"><i>06</i><b>细节结构</b></a>
+        <a href="#m07"><i>07</i><b>使用场景</b></a>
+        <a href="#m08"><i>08</i><b>原始展板</b></a>
+      </nav>
+      <p class="rail__note mono">08 Modules<br>Scroll ↓</p>
+    </aside>
+
+    <article class="proj-main">
+
+      <!-- ============ 01 BRIEF ============ -->
+      <section class="mod" id="m01">
+        <header class="mod__head" data-reveal>
+          <span class="mod__no">01</span>
+          <div>
+            <p class="mod__kicker">Brief / 设计简介</p>
+            <h2 class="mod__title">打破「交通工具」与「临时办公工具」的界限</h2>
+          </div>
+          <p class="mod__meta">FIG. 02<br>Design Statement</p>
+        </header>
+
+        <div class="mod__body g12">
+          <div class="c-7" data-reveal style="--d:80ms">
+            <p class="brief-lead">创造一个既能在城市中<em>流畅穿梭</em>，又能快速转化为<em>临时工作平台</em>的多功能电动滑板。它既是代步工具，也是移动化的办公支持。</p>
+            <p class="brief-en">This design attempts to break the boundary between “transportation tools” and “temporary office tools”, creating a multi-functional electric skateboard that can not only smoothly move through the city but also quickly transform into a temporary work platform.</p>
+            <dl class="brief-rows">
+              <div>
+                <dt>用户使用倾向</dt>
+                <dd>代步 · 工作 · 休憩 —— 一台设备覆盖三种状态。</dd>
+              </div>
+              <div>
+                <dt>设计情感导向</dt>
+                <dd>流动与融合 / Flow &amp; Integration。</dd>
+              </div>
+              <div>
+                <dt>设计价值定位</dt>
+                <dd>交通工具 × 人 × 环境，在移动中重新组织工作与生活。</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="c-5 vmap-wrap" data-reveal style="--d:180ms">
+            <svg class="vmap" viewBox="0 0 440 330" role="img" aria-label="设计价值定位：以 Flow Board 为中心，连接代步、工作与休憩">
+              <circle cx="220" cy="168" r="126" fill="none" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 5"/>
+              <g stroke="var(--accent)" stroke-width="1" stroke-dasharray="4 4" fill="none" opacity="0.85">
+                <path d="M186 128 L104 92"/>
+                <path d="M254 128 L336 92"/>
+                <path d="M220 218 L220 264"/>
+              </g>
+              <circle cx="220" cy="168" r="54" fill="var(--ink)"/>
+              <text class="vmap__core" x="220" y="164" text-anchor="middle" fill="var(--paper)">FLOW</text>
+              <text class="vmap__core" x="220" y="178" text-anchor="middle" fill="var(--paper)">BOARD</text>
+              <text class="vmap__tiny" x="220" y="196" text-anchor="middle" fill="var(--accent-soft)">MOBILE WORK PLATFORM</text>
+
+              <g>
+                <circle cx="86" cy="78" r="32" fill="var(--white)" stroke="var(--line)"/>
+                <text class="vmap__name" x="86" y="76" text-anchor="middle">代步</text>
+                <text class="vmap__tiny" x="86" y="91" text-anchor="middle">MOBILITY</text>
+              </g>
+              <g>
+                <circle cx="354" cy="78" r="32" fill="var(--white)" stroke="var(--line)"/>
+                <text class="vmap__name" x="354" y="76" text-anchor="middle">工作</text>
+                <text class="vmap__tiny" x="354" y="91" text-anchor="middle">WORK</text>
+              </g>
+              <g>
+                <circle cx="220" cy="288" r="32" fill="var(--white)" stroke="var(--line)"/>
+                <text class="vmap__name" x="220" y="286" text-anchor="middle">休憩</text>
+                <text class="vmap__tiny" x="220" y="301" text-anchor="middle">REST</text>
+              </g>
+              <text class="vmap__tiny" x="220" y="26" text-anchor="middle">人 · 环境 / HUMAN · CONTEXT</text>
+            </svg>
+            <p class="vmap__cap">设计价值定位 / Value Positioning</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 02 CONTEXT ============ -->
+      <section class="mod" id="m02">
+        <header class="mod__head" data-reveal>
+          <span class="mod__no">02</span>
+          <div>
+            <p class="mod__kicker">Context / 背景研究</p>
+            <h2 class="mod__title">远程办公成为常态，数字游民规模化增长</h2>
+          </div>
+          <p class="mod__meta">FIG. 03—04<br>Desk Research</p>
+        </header>
+
+        <div class="mod__body">
+          <div class="metrics" data-reveal>
+            <div class="metric">
+              <b><span data-count="3500">3,500</span><sup>万</sup></b>
+              <span>2022 全球数字游民规模</span>
+            </div>
+            <div class="metric">
+              <b><span data-count="10">10</span><sup>亿+</sup></b>
+              <span>2035 预测规模</span>
+            </div>
+            <div class="metric">
+              <b><span data-count="59">59</span><sup>%</sup></b>
+              <span>全球混合办公员工占比</span>
+            </div>
+          </div>
+
+          <div class="tl-block">
+            <div class="tl-head">
+              <h3>全球数字游民发展趋势</h3>
+              <span class="mono">1997 — 2035</span>
+            </div>
+            <div class="tl-scroll">
+              <div class="tl" data-pan>
+                <span class="tl__line" aria-hidden="true"><i></i></span>
+                <div class="tl__item">
+                  <em>1997</em><b>宣言</b><span>《Digital Nomad》正式出版</span>
+                </div>
+                <div class="tl__item">
+                  <em>2015</em><b>500 万</b><span>随后开始爆炸式增长</span>
+                </div>
+                <div class="tl__item">
+                  <em>2019</em><b>1,460 万</b><span>远程办公逐渐普及</span>
+                </div>
+                <div class="tl__item">
+                  <em>2020</em><b>2,180 万</b><span>疫情推动远程工作</span>
+                </div>
+                <div class="tl__item">
+                  <em>2021</em><b>3,100 万</b><span>跨地域、跨时区流动</span>
+                </div>
+                <div class="tl__item">
+                  <em>2022</em><b>3,500 万</b><span>成为流动的生活方式</span>
+                </div>
+                <div class="tl__item tl__item--key">
+                  <em>2035</em><b>10 亿+</b><span>预测突破十亿人</span>
+                </div>
+              </div>
+            </div>
+            <p class="tl-hint mono">← 横向滑动查看完整时间轴</p>
+          </div>
+
+          <div class="bars" aria-label="远程办公调研数据">
+            <div class="bar" data-pan style="--v:.82;--d:0ms">
+              <b><span data-count="82">82</span>%</b>
+              <span class="bar__track"><i class="bar__fill"></i></span>
+              <span>企业领导者在疫情后继续允许远程工作</span>
+            </div>
+            <div class="bar" data-pan style="--v:.79;--d:90ms">
+              <b><span data-count="79">79</span>%</b>
+              <span class="bar__track"><i class="bar__fill"></i></span>
+              <span>企业维持灵活远程政策</span>
+            </div>
+            <div class="bar" data-pan style="--v:.64;--d:180ms">
+              <b><span data-count="64">64</span>%</b>
+              <span class="bar__track"><i class="bar__fill"></i></span>
+              <span>雇主提供混合办公选项</span>
+            </div>
+            <div class="bar" data-pan style="--v:.59;--d:270ms">
+              <b><span data-count="59">59</span>%</b>
+              <span class="bar__track"><i class="bar__fill"></i></span>
+              <span>全球范围内约 59% 员工为混合办公</span>
+            </div>
+          </div>
+
+          <p class="source mono" data-reveal>Source — Digital Nomad Research / 桌面研究整理，2022</p>
+        </div>
+      </section>
+
+      <!-- ============ 03 INSIGHT ============ -->
+      <section class="mod" id="m03">
+        <header class="mod__head" data-reveal>
+          <span class="mod__no">03</span>
+          <div>
+            <p class="mod__kicker">Insight / 需求洞察</p>
+            <h2 class="mod__title">七层需求结构与 5W2H 人群画像</h2>
+          </div>
+          <p class="mod__meta">FIG. 05—06<br>Seven Layers / 5W2H</p>
+        </header>
+
+        <div class="mod__body g12">
+          <div class="c-6" data-reveal>
+            <div class="mini-head">
+              <h3>Seven Layers Model</h3>
+              <span class="mono">数字游民需求七层结构</span>
+            </div>
+            <ol class="layers">
+              <li class="layer">
+                <i>01</i>
+                <div><b>生活成本</b><span>Cost of Living</span></div>
+                <p>优先级最高。租金、餐饮、日常开销必须可持续。</p>
+              </li>
+              <li class="layer">
+                <i>02</i>
+                <div><b>数字游民社区</b><span>Community</span></div>
+                <p>影响社交、心理支持与归属感。</p>
+              </li>
+              <li class="layer">
+                <i>03</i>
+                <div><b>工作空间</b><span>Workspaces</span></div>
+                <p>联合办公、旅途办公与居家办公之间的切换。</p>
+              </li>
+              <li class="layer">
+                <i>04</i>
+                <div><b>网络连接性</b><span>Connectivity</span></div>
+                <p>稳定网络与移动热点，是移动办公的前提。</p>
+              </li>
+              <li class="layer">
+                <i>05</i>
+                <div><b>出行动线</b><span>Mobility</span></div>
+                <p>城市共享空间、旅途或交通工具、室内临时居所、户外空间。</p>
+              </li>
+              <li class="layer">
+                <i>06</i>
+                <div><b>环境与活动</b><span>Environment</span></div>
+                <p>停留地的气候、活动与社交机会。</p>
+              </li>
+              <li class="layer">
+                <i>07</i>
+                <div><b>事宜与事务</b><span>Bureaucracy</span></div>
+                <p>签证政策、居留许可，以及银行、医疗、保险等行政手续。</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="c-6" data-reveal style="--d:120ms">
+            <div class="mini-head">
+              <h3>5W2H</h3>
+              <span class="mono">人群画像 / Persona</span>
+            </div>
+            <div class="w2h">
+              <div class="w2h__cell">
+                <b>WHO</b>
+                <ul><li>自由职业者</li><li>远程员工</li><li>创意产业从业者</li></ul>
+              </div>
+              <div class="w2h__cell">
+                <b>WHAT</b>
+                <ul><li>办公环境不稳定</li><li>网络不稳定</li><li>交通与出行负担</li></ul>
+              </div>
+              <div class="w2h__cell">
+                <b>WHY</b>
+                <ul><li>追求生活自由</li><li>高度依赖电子设备与网络</li></ul>
+              </div>
+              <div class="w2h__cell">
+                <b>WHEN</b>
+                <ul><li>工作时间</li><li>休闲时间</li><li>出行中</li><li>临时驻留</li></ul>
+              </div>
+              <div class="w2h__cell">
+                <b>WHERE</b>
+                <ul><li>城市共享空间</li><li>旅途或交通工具</li><li>室内临时居所</li><li>户外空间</li></ul>
+              </div>
+              <div class="w2h__cell">
+                <b>HOW</b>
+                <ul><li>便携式办公设备</li><li>高速网络与移动热点</li><li>模块化工具</li><li>轻量化、可折叠交通工具</li></ul>
+              </div>
+              <div class="w2h__cell w2h__cell--wide">
+                <b>HOW MUCH</b>
+                <ul><li>时间成本</li><li>经济成本</li><li>心理压力</li></ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="c-12" data-reveal>
+            <div class="insight-band">
+              <div>
+                <span class="insight-band__k mono">Core Pain Point / 核心痛点</span>
+                <p>数字游民的核心痛点在于 <em>移动办公的高效与舒适难以兼顾</em>。</p>
+              </div>
+              <div>
+                <span class="insight-band__k mono">Design Opportunity / 设计机会</span>
+                <p>以<em>轻量化、模块化、多功能</em>的一体化便携方案，平衡移动办公的高效与舒适。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 04 IDEATION ============ -->
+      <section class="mod" id="m04">
+        <header class="mod__head" data-reveal>
+          <span class="mod__no">04</span>
+          <div>
+            <p class="mod__kicker">Ideation / 概念发散</p>
+            <h2 class="mod__title">从三种方向到「移动滑板类」方案收敛</h2>
+          </div>
+          <p class="mod__meta">FIG. 07—08<br>Positioning / Plans</p>
+        </header>
+
+        <div class="mod__body g12">
+          <div class="c-5" data-reveal>
+            <div class="mini-head">
+              <h3>设计定位</h3>
+              <span class="mono">Design Positioning</span>
+            </div>
+            <dl class="brief-rows brief-rows--tight">
+              <div>
+                <dt>使用场景</dt>
+                <dd>短途通勤 / 跨场景移动 / 临时驻留</dd>
+              </div>
+              <div>
+                <dt>功能定位</dt>
+                <dd>代步工具 / 模块化扩展 / 随行办公</dd>
+              </div>
+              <div>
+                <dt>产品目标</dt>
+                <dd>在高密度的城市节奏中，让个体随时切换身份与状态。</dd>
+              </div>
+            </dl>
+            <blockquote class="pquote">
+              它承载了「未来游牧」式的自由精神——不受固定场所约束，随时随地展开连接、创造与交流。
+            </blockquote>
+          </div>
+
+          <div class="c-7" data-reveal style="--d:120ms">
+            <div class="mini-head">
+              <h3>方向发散</h3>
+              <span class="mono">PLAN A / B / C</span>
+            </div>
+            <div class="plans">
+              <table>
+                <thead>
+                  <tr>
+                    <th>方案</th>
+                    <th>灵活性</th>
+                    <th>便携性</th>
+                    <th>耐用性</th>
+                    <th>多功能性</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>A</b><span>共享充电 / 办公舱</span></td>
+                    <td><i class="rate rate--c">C</i></td>
+                    <td><i class="rate rate--c">C</i></td>
+                    <td><i class="rate rate--a">A</i></td>
+                    <td><i class="rate rate--a">A</i></td>
+                  </tr>
+                  <tr>
+                    <td><b>B</b><span>背包类</span></td>
+                    <td><i class="rate rate--a">A</i></td>
+                    <td><i class="rate rate--a">A</i></td>
+                    <td><i class="rate rate--c">C</i></td>
+                    <td><i class="rate rate--b">B</i></td>
+                  </tr>
+                  <tr class="is-selected">
+                    <td><b>C</b><span>移动滑板类</span><em class="tag-sel">Selected</em></td>
+                    <td><i class="rate rate--a">A</i></td>
+                    <td><i class="rate rate--a">A</i></td>
+                    <td><i class="rate rate--b">B</i></td>
+                    <td><i class="rate rate--a">A</i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="plans__note">PLAN C 在灵活性、便携性与多功能性之间取得平衡，成为最终选择。</p>
+          </div>
+        </div>
+
+        <div class="mood" data-reveal>
+          <figure class="mood__fig" data-pan>
+            <img src="../assets/img/flow-mood-4.jpg" alt="Flow Board 情绪板：产品形态与材质参考" loading="lazy">
+            <figcaption class="mono">Fig. 09 — Mood Board / 情绪板</figcaption>
+          </figure>
+          <ul class="mood__themes">
+            <li><em>01</em><div><b>流动与自由</b><span>Flow &amp; Freedom</span></div></li>
+            <li><em>02</em><div><b>科技感</b><span>Technology</span></div></li>
+            <li><em>03</em><div><b>多形态</b><span>Multiple Forms</span></div></li>
+            <li><em>04</em><div><b>多功能</b><span>Multi-functional</span></div></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ 05 FORM ============ -->
+      <section class="mod" id="m05">
+        <header class="mod__head" data-reveal>
+          <span class="mod__no">05</span>
+          <div>
+            <p class="mod__kicker">Form / 形态推演</p>
+            <h2 class="mod__title">一台设备，三种形态</h2>
+          </div>
+          <p class="mod__meta">FIG. 10—12<br>Modeling</p>
+        </header>
+
+        <div class="mod__body">
+          <figure class="form-strip" data-pan>
+            <img src="../assets/img/flow-form-strip.jpg" alt="Flow Board 造型推演：出行滑板形态与灵活办公形态" loading="lazy">
+            <figcaption class="proj-cap">
+              <span>Modeling — 出行滑板形态 / 灵活办公形态</span>
+              <span class="mono">Fig. 10</span>
+            </figcaption>
+          </figure>
+
+          <div class="form-cards">
+            <div class="form-card" data-reveal style="--d:0ms">
+              <em>01</em>
+              <h4>出行滑板形态</h4>
+              <p>紧凑轮廓、电动驱动与前端拉手，支持短途通勤与跨场景移动。</p>
+              <ul><li>电动驱动</li><li>拉手 + 车灯</li><li>紧凑外形</li></ul>
+            </div>
+            <div class="form-card" data-reveal style="--d:90ms">
+              <em>02</em>
+              <h4>灵活办公形态</h4>
+              <p>两侧靠脚翻折支撑，使板面抬升至稳定状态，形成临时桌面。</p>
+              <ul><li>翻折支撑</li><li>稳定台面</li><li>无线充电台阶</li></ul>
+            </div>
+            <div class="form-card" data-reveal style="--d:180ms">
+              <em>03</em>
+              <h4>半休憩形态</h4>
+              <p>台面翻转后轻微倾斜，背靠板体，形成「半休息」姿态。</p>
+              <ul><li>倾斜台面</li><li>背靠支撑</li><li>亲肤哑光涂层</li></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 06 DETAIL ============ -->
+      <section class="mod" id="m06">
+        <header class="mod__head" data-reveal>
+          <span class="mod__no">06</span>
+          <div>
+            <p class="mod__kicker">Detail / 细节结构</p>
+            <h2 class="mod__title">把充电、放置与支撑收进一块板</h2>
+          </div>
+          <p class="mod__meta">FIG. 13—14<br>Details</p>
+        </header>
+
+        <div class="mod__body">
+          <div class="detail-plates">
+            <figure data-reveal style="--d:0ms" data-zoom>
+              <img src="../assets/img/flow-detail-1.jpg" alt="抬高台阶细节：无线充电区、隐藏接口与物品承托" loading="lazy">
+              <figcaption class="proj-cap"><span><em>A</em> 抬高台阶 — 充电 + 放置</span><span class="mono">Detail A</span></figcaption>
+            </figure>
+            <figure data-reveal style="--d:120ms" data-zoom>
+              <img src="../assets/img/flow-detail-2.jpg" alt="底部结构细节：翻折支撑、模块电池仓与散热纹理" loading="lazy">
+              <figcaption class="proj-cap"><span><em>B</em> 底部结构 — 稳固 + 供能</span><span class="mono">Detail B</span></figcaption>
+            </figure>
+          </div>
+
+          <div class="details-grid">
+            <div class="d-item" data-reveal style="--d:0ms">
+              <i>01</i>
+              <div><h4>便携设计</h4><p>滑板整体紧凑，外观简洁，移动时看不出额外办公功能。</p></div>
+            </div>
+            <div class="d-item" data-reveal style="--d:60ms">
+              <i>02</i>
+              <div><h4>休憩功能</h4><p>台面翻转后可轻微倾斜，背靠滑板，形成「半休息姿态」。</p></div>
+            </div>
+            <div class="d-item" data-reveal style="--d:120ms">
+              <i>03</i>
+              <div><h4>无线充电台阶</h4><p>前端小台阶嵌入金属无线充电板，手机放上即可自动充电，减少线缆干扰。</p></div>
+            </div>
+            <div class="d-item" data-reveal style="--d:180ms">
+              <i>04</i>
+              <div><h4>隐藏式 USB 接口</h4><p>接口收在台阶侧面，与充电区整合，保持整块板面的整洁。</p></div>
+            </div>
+            <div class="d-item" data-reveal style="--d:240ms">
+              <i>05</i>
+              <div><h4>稳定台面</h4><p>两侧靠脚翻折支撑，板面抬升至稳定状态，避免摇晃。</p></div>
+            </div>
+            <div class="d-item" data-reveal style="--d:300ms">
+              <i>06</i>
+              <div><h4>防滑纹路</h4><p>亲肤哑光表层不冰冷，边缘微上翘的「微边框」阻止笔电与咖啡杯晃动滑出。</p></div>
+            </div>
+            <div class="d-item" data-reveal style="--d:360ms">
+              <i>07</i>
+              <div><h4>移动属性</h4><p>具备电动驱动能力，结合前端拉手与车灯，支持短途通勤与跨场景移动。</p></div>
+            </div>
+            <div class="d-item" data-reveal style="--d:420ms">
+              <i>08</i>
+              <div><h4>抬高台阶</h4><p>将「充电 + 放置」融为一体，兼顾办公便利与生活化的小细节。</p></div>
+            </div>
+            <div class="d-item" data-reveal style="--d:480ms">
+              <i>09</i>
+              <div><h4>底部结构</h4><p>翻折支撑、模块电池仓与散热纹理合理整合，使滑板成为「移动工作基座」。</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 07 SCENE ============ -->
+      <section class="mod" id="m07">
+        <header class="mod__head" data-reveal>
+          <span class="mod__no">07</span>
+          <div>
+            <p class="mod__kicker">Scene / 使用场景</p>
+            <h2 class="mod__title">随身携带、快速移动、灵活办公、休憩放松</h2>
+          </div>
+          <p class="mod__meta">FIG. 15<br>Scenarios</p>
+        </header>
+
+        <div class="mod__body">
+          <figure class="scene-strip" data-pan>
+            <img src="../assets/img/flow-scenes-strip.jpg" alt="Flow Board 四种使用场景：随身携带、快速移动、灵活办公、休憩放松" loading="lazy">
+            <figcaption class="proj-cap">
+              <span>Scene — 随身携带 / 快速移动 / 灵活办公 / 休憩放松</span>
+              <span class="mono">Fig. 15</span>
+            </figcaption>
+          </figure>
+
+          <div class="scene-cards">
+            <div class="scene-card" data-reveal style="--d:0ms">
+              <em>01 / CARRY</em>
+              <h4>随身携带</h4>
+              <p>紧凑轮廓与前端拉手，让滑板像背包一样随身。</p>
+            </div>
+            <div class="scene-card" data-reveal style="--d:90ms">
+              <em>02 / MOVE</em>
+              <h4>快速移动</h4>
+              <p>电动驱动与车灯，完成短途通勤与跨场景移动。</p>
+            </div>
+            <div class="scene-card" data-reveal style="--d:180ms">
+              <em>03 / WORK</em>
+              <h4>灵活办公</h4>
+              <p>翻折支撑抬起板面，数十秒内形成稳定桌面。</p>
+            </div>
+            <div class="scene-card" data-reveal style="--d:270ms">
+              <em>04 / REST</em>
+              <h4>休憩放松</h4>
+              <p>台面轻微倾斜，背靠板体，形成半休息姿态。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 08 PLATES ============ -->
+      <section class="mod" id="m08">
+        <header class="mod__head" data-reveal>
+          <span class="mod__no">08</span>
+          <div>
+            <p class="mod__kicker">Process / 原始展板</p>
+            <h2 class="mod__title">从研究到细节的四页完整展板</h2>
+          </div>
+          <p class="mod__meta">PLATE 01—04<br>Archive</p>
+        </header>
+
+        <div class="mod__body">
+          <p class="plates-note" data-reveal>点击任意展板可放大查看原始排版与全部细节标注。</p>
+          <div class="plates">
+            <figure class="plate" data-pan data-zoom>
+              <img src="../assets/img/spread-flow-3.jpg" alt="Flow Board 原始展板 01：设计简介与形态" loading="lazy">
+              <figcaption class="proj-cap"><span>Plate 01 — Brief</span><span class="mono">P.01</span></figcaption>
+            </figure>
+            <figure class="plate" data-pan data-zoom>
+              <img src="../assets/img/spread-flow-4.jpg" alt="Flow Board 原始展板 02：背景研究与需求洞察" loading="lazy">
+              <figcaption class="proj-cap"><span>Plate 02 — Research</span><span class="mono">P.02</span></figcaption>
+            </figure>
+            <figure class="plate" data-pan data-zoom>
+              <img src="../assets/img/spread-flow-5.jpg" alt="Flow Board 原始展板 03：概念发散与造型推演" loading="lazy">
+              <figcaption class="proj-cap"><span>Plate 03 — Ideation</span><span class="mono">P.03</span></figcaption>
+            </figure>
+            <figure class="plate" data-pan data-zoom>
+              <img src="../assets/img/spread-flow-6.jpg" alt="Flow Board 原始展板 04：细节结构与使用场景" loading="lazy">
+              <figcaption class="proj-cap"><span>Plate 04 — Details</span><span class="mono">P.04</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <nav class="study__nav">
+        <a href="zuc-zug.html"><span><span class="dir">Prev — 05</span>ZUC ZUG</span></a>
+        <a class="center" href="../index.html#works">All Works</a>
+        <a href="ecotransit-rover.html" style="justify-content:flex-end;text-align:right"><span><span class="dir">Next — 02</span>EcoTransit Rover</span></a>
+      </nav>
+
+    </article>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div>
+        <p class="eyebrow">Contact · 联系</p>
+        <h2 class="footer__title">Let's<br><span>Talk</span></h2>
+        <p class="footer__note">如果你在寻找一位能把概念推进到可落地方案的产品设计师，欢迎随时联系我。</p>
+      </div>
+      <div class="footer__links">
+        <a href="mailto:2381132433@qq.com"><span>2381132433@qq.com</span><span class="k">E-mail</span></a>
+        <a href="tel:15251387607"><span>152 5138 7607</span><span class="k">Tel</span></a>
+        <a href="../index.html#works"><span>作品索引 01 — 05</span><span class="k">Index</span></a>
+        <a href="../index.html#about"><span>经历与获奖</span><span class="k">CV</span></a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 Wang Yao · 工业产品设计作品集</span>
+      <span class="barcode" aria-hidden="true"></span>
+      <span>Archive Ref. WY—23—FB—01</span>
+      <a href="#top">回到顶部 ↑</a>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true"><img alt=""></div>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>
