@@ -3428,18 +3428,17 @@ button:focus-visible {
 }
 
 /* ============================================================
-   HOME — reference-led editorial layout (white canvas)
+   HOME — reference-led editorial layout (light paper canvas)
    ============================================================ */
 .home {
-  background: #ffffff;
-  --paper: #ffffff;
-  --paper-2: #f6f5f3;
-  --card: #fafaf9;
-  --white: #ffffff;
-  --line: #e8e6e2;
-  --line-soft: #efeeeb;
+  background: #f2f1ee;
+  --paper: #f2f1ee;
+  --paper-2: #e8e6e0;
+  --card: #eae8e1;
+  --line: #d4d1c9;
+  --line-soft: #e2e0d8;
 }
-.home .grain { opacity: 0.08; }
+.home .grain { opacity: 0.18; }
 
 .home .container { max-width: 1480px; }
 
