@@ -3587,22 +3587,30 @@ button:focus-visible {
   margin: 0 0 clamp(12px, 1.6vw, 22px);
 }
 .cover__h {
-  font-size: clamp(28px, 3.4vw, 54px);
+  font-size: clamp(34px, 4.2vw, 68px);
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.02;
   letter-spacing: -0.025em;
   margin: 0 0 clamp(14px, 1.8vw, 24px);
 }
-.cover__h i {
-  font-family: var(--font-mono);
+.cover__h-cn {
+  font-family: "Noto Sans SC", "PingFang SC", sans-serif;
   font-style: normal;
-  font-size: 11px;
+  font-size: clamp(14px, 1.4vw, 20px);
   font-weight: 400;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  display: block;
+  margin-top: clamp(8px, 1vw, 14px);
+}
+.cover__h-sub {
+  display: block;
+  margin-top: clamp(6px, 0.8vw, 10px);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--muted);
-  display: block;
-  margin-top: clamp(10px, 1.4vw, 18px);
 }
 .cover__sub {
   margin: 0 0 clamp(18px, 2.2vw, 30px);
