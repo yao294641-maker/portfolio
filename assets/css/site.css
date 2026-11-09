@@ -3428,9 +3428,18 @@ button:focus-visible {
 }
 
 /* ============================================================
-   HOME — reference-led editorial layout (light grey canvas)
+   HOME — reference-led editorial layout (white canvas)
    ============================================================ */
-.home { background: #f2f1ee; }
+.home {
+  background: #ffffff;
+  --paper: #ffffff;
+  --paper-2: #f6f5f3;
+  --card: #fafaf9;
+  --white: #ffffff;
+  --line: #e8e6e2;
+  --line-soft: #efeeeb;
+}
+.home .grain { opacity: 0.08; }
 
 .home .container { max-width: 1480px; }
 
