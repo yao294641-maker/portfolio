@@ -15,6 +15,10 @@
 
 <div class="page">
 
+  <div class="gridlines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+  <span class="edge edge--l" aria-hidden="true">Portfolio</span>
+  <span class="edge edge--r" aria-hidden="true">Industrial Design</span>
+
   <header class="nav" id="nav">
     <div class="container nav__inner">
       <a class="brand" href="index.html">
@@ -40,49 +44,36 @@
   <main>
 
     <!-- ============================ HERO ============================ -->
-    <section class="hwave container" id="hero">
-      <div class="hwave__stage">
-        <svg class="hwave__lines" viewBox="0 0 1600 520" preserveAspectRatio="none" aria-hidden="true">
-          <g fill="none" stroke="#37a35f" stroke-width="1.4">
-            <path d="M-60,84  C280,30  560,250 860,250  S1360,90  1660,150" opacity="0.9"/>
-            <path d="M-60,108 C300,60  580,278 870,268  S1370,116 1660,176" opacity="0.86"/>
-            <path d="M-60,132 C320,92  600,302 880,284  S1380,142 1660,202" opacity="0.82"/>
-            <path d="M-60,156 C340,124 620,326 890,300  S1390,168 1660,228" opacity="0.78"/>
-            <path d="M-60,180 C360,156 640,348 900,316  S1400,194 1660,254" opacity="0.74"/>
-            <path d="M-60,204 C360,190 660,368 910,332  S1410,220 1660,280" opacity="0.7"/>
-            <path d="M-60,228 C380,224 680,388 920,348  S1420,246 1660,306" opacity="0.66"/>
-            <path d="M-60,252 C400,258 700,406 930,364  S1430,272 1660,332" opacity="0.62"/>
-            <path d="M-60,276 C420,292 720,424 940,380  S1440,298 1660,358" opacity="0.58"/>
-            <path d="M-60,300 C440,326 740,440 950,396  S1450,324 1660,384" opacity="0.54"/>
-            <path d="M-60,324 C460,360 760,454 960,410  S1460,350 1660,410" opacity="0.5"/>
-            <path d="M-60,348 C480,394 780,466 970,424  S1470,376 1660,436" opacity="0.46"/>
-            <path d="M-60,372 C500,428 800,478 980,438  S1480,402 1660,462" opacity="0.42"/>
-            <path d="M-60,396 C520,462 820,488 990,452  S1490,428 1660,488" opacity="0.38"/>
-          </g>
-        </svg>
+    <section class="ghero container" id="hero">
+      <div class="ghero__grid">
 
-        <div class="hwave__title">
-          <p class="eyebrow">工业产品设计 · Industrial &amp; Product Design</p>
-          <h1 class="hwave__word" aria-label="PORTFOLIO">
-            <span class="hwave__echo" aria-hidden="true">PORTFOLIO</span>
-            <span class="hwave__front" data-split>PORTFOLIO</span>
-          </h1>
-          <p class="hwave__sub">Industrial &amp; Product Design Works&nbsp; 2022 — 2025</p>
-          <p class="hwave__name">Yao Wang</p>
+        <div class="ghero__copy">
+          <p class="eyebrow">工业产品设计 · Portfolio 2022 — 2025</p>
+          <h1 class="ghero__title">王瑶<span class="ghero__title-en">Wang Yao</span></h1>
+          <p class="ghero__lead">工业产品设计师，南京林业大学家具设计与工程专业。以理性分析为方法，关注环保与节能议题，让产品进入真实生活场景。</p>
+          <div class="ghero__cta">
+            <a class="btn" href="#works">浏览作品 <span class="btn__arrow">↗</span></a>
+            <a class="ghero__link" href="#contact">联系我 →</a>
+          </div>
+          <dl class="ghero__facts">
+            <div><dt>Works</dt><dd>05</dd></div>
+            <div><dt>Awards</dt><dd>08</dd></div>
+            <div><dt>Research</dt><dd>03</dd></div>
+          </dl>
         </div>
-      </div>
 
-      <div class="hwave__foot">
-        <p class="hwave__intro"><b>王瑶</b> — 南京林业大学家具设计与工程。以理性分析为方法，关注环保与节能议题，力求在设计中实现可持续价值。</p>
-        <dl class="hwave__meta">
-          <div><dt>Works</dt><dd>05</dd></div>
-          <div><dt>Awards</dt><dd>08</dd></div>
-          <div><dt>Research</dt><dd>03</dd></div>
-        </dl>
-        <div class="hwave__actions">
-          <a class="btn" href="#works">浏览作品 <span class="btn__arrow">↗</span></a>
-          <a class="btn btn--ghost" href="#contact">联系我</a>
-        </div>
+        <figure class="ghero__prod">
+          <span class="ghero__orbit" aria-hidden="true"></span>
+          <span class="ghero__tag" aria-hidden="true"><i></i>AIR GUARD — FEATURED · 03 / 05</span>
+          <a class="ghero__frame" href="work/air-guard.html">
+            <img src="assets/img/air-cover.jpg" alt="Air Guard 吸尘打气一体设备" fetchpriority="high">
+          </a>
+          <figcaption class="ghero__cap">
+            <div><b>Air Guard</b><span>吸尘打气二合一 · 车内清洁方案</span></div>
+            <span class="ghero__go">↗</span>
+          </figcaption>
+        </figure>
+
       </div>
     </section>
 
@@ -144,6 +135,23 @@
           <span class="htile__tag"><b>05</b><span class="htile__name">ZUC ZUG<i>上海静安嘉里中心 · 简单、有趣、开放的市集</i></span></span>
           <span class="htile__go">↗</span>
         </a>
+      </div>
+    </section>
+
+    <!-- ============================ FEATURED / AIR GUARD ============================ -->
+    <section class="hstmt container" id="featured">
+      <p class="eyebrow">Featured Work — Air Guard</p>
+      <h2 class="hstmt__title">吸尘与打气，一台设备<br>完成车内清洁的两半</h2>
+      <p class="hstmt__sub">A 2-in-1 vacuum &amp; inflator — structure study</p>
+
+      <figure class="hstmt__fig" data-reveal>
+        <img src="assets/img/air-explode.jpg" alt="Air Guard 结构爆炸图：档位按钮、外壳、电机、电池、过滤网沿中轴展开">
+      </figure>
+
+      <div class="hstmt__cols">
+        <p><b>双向气流</b> — 一个无刷电机腔体，通过双向泵头完成吸尘与充气两种模式。</p>
+        <p><b>中轴展开</b> — 从档位按钮到过滤网，全部 12 个部件沿一条轴线装配，便于拆解与维护。</p>
+        <a class="btn btn--ghost" href="work/air-guard.html">查看完整案例 <span class="btn__arrow">↗</span></a>
       </div>
     </section>
 
@@ -245,7 +253,7 @@
 
         <figure class="habout__portrait">
           <svg class="habout__wave" viewBox="0 0 400 400" aria-hidden="true">
-            <g fill="none" stroke="#37a35f" stroke-width="1.3">
+            <g fill="none" stroke="#3f6ea5" stroke-width="1.3">
               <path d="M-20,120 C80,84  150,196 230,168 S360,104 420,150" opacity="0.85"/>
               <path d="M-20,146 C90,112 160,220 240,192 S365,148 420,176" opacity="0.72"/>
               <path d="M-20,172 C100,140 170,242 250,216 S370,176 420,202" opacity="0.6"/>
