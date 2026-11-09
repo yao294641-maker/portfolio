@@ -3428,17 +3428,18 @@ button:focus-visible {
 }
 
 /* ============================================================
-   HOME — reference-led editorial layout (light paper canvas)
+   HOME — neutral greyscale canvas matching paper-cut photo
    ============================================================ */
 .home {
-  background: #f2f1ee;
-  --paper: #f2f1ee;
-  --paper-2: #e8e6e0;
-  --card: #eae8e1;
-  --line: #d4d1c9;
-  --line-soft: #e2e0d8;
+  background: #efefef;
+  --paper: #efefef;
+  --paper-2: #e7e7e7;
+  --card: #eaeaea;
+  --line: #d9d9d9;
+  --line-soft: #e5e5e5;
+  --ink: #1a1a1a;
 }
-.home .grain { opacity: 0.18; }
+.home .grain { opacity: 0.12; }
 
 .home .container { max-width: 1480px; }
 
@@ -3652,6 +3653,20 @@ button:focus-visible {
 .cover__line--3 { animation-delay: 0.56s; }
 .cover__line--4 { animation-delay: 0.64s; }
 .cover__line--5 { animation-delay: 0.72s; }
+
+.cover__cut-text text {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.24em;
+  text-anchor: middle;
+  fill: #8a8a8a;
+}
+.cover__cut-text-strong {
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  fill: #4a4a4a;
+}
 
 /* small absolute corner labels — part of the flat cover, not a card */
 .cover__brand,
