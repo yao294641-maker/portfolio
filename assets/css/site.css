@@ -3482,9 +3482,42 @@ button:focus-visible {
     radial-gradient(45% 40% at 30% 78%, #fbead4 0%, rgba(251,234,212,0) 70%),
     radial-gradient(100% 80% at 100% 100%, #eae7e2 0%, rgba(234,231,226,0) 65%),
     #f6f3ee;
-  filter: blur(40px) saturate(95%);
+  filter: blur(28px) saturate(95%);
   transform: scale(1.2) translateZ(0);
   animation: auroraShift 18s ease-in-out infinite alternate;
+}
+/* frosted glass haze over aurora */
+.hero__aurora::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* 极淡的中心到边缘白色 haze + 半透明磨砂 */
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(255,255,255,0.30) 0%, rgba(255,255,255,0) 55%),
+    radial-gradient(ellipse at 75% 70%, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0) 50%),
+    rgba(246,243,238,0.18);
+  mix-blend-mode: screen;
+}
+/* noise grain for frosted feel */
+.hero--aurora::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.28;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.35 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.9'/></svg>");
+  background-size: 280px 280px;
+  mix-blend-mode: multiply;
+  animation: grainShift 6s steps(6) infinite;
+}
+@keyframes grainShift {
+  0%   { transform: translate(0,0); }
+  20%  { transform: translate(-2%,1%); }
+  40%  { transform: translate(1%,-1%); }
+  60%  { transform: translate(-1%,2%); }
+  80%  { transform: translate(2%,-2%); }
+  100% { transform: translate(0,0); }
 }
 @keyframes auroraShift {
   0%   { transform: scale(1.2) translate(0,0) translateZ(0); }
@@ -3922,9 +3955,103 @@ button:focus-visible {
 /* ---------- works ---------- */
 .home .works { padding-top: clamp(30px, 4.2vw, 58px); }
 .home .section-head h2 {
-  font-size: clamp(34px, 4.8vw, 62px);
-  font-weight: 400;
-  letter-spacing: -0.03em;
+  font-size: clamp(40px, 5.6vw, 76px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.home .section-head .eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #3b68c4;
+  margin-bottom: 14px;
+}
+.home .section-head .note {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 420px;
+}
+
+/* works grid — two columns of large cards, fig1 style */
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(28px, 3.6vw, 52px);
+  margin-top: clamp(36px, 4.8vw, 64px);
+}
+.worktile {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .4s cubic-bezier(.16,1,.3,1);
+}
+.worktile:hover { transform: translateY(-6px); }
+.worktile__media {
+  position: relative;
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #eae7e2;
+}
+.worktile__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .8s cubic-bezier(.16,1,.3,1);
+}
+.worktile:hover .worktile__media img { transform: scale(1.03); }
+.worktile__info {
+  padding: 22px 4px 0;
+}
+.worktile__idx {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  color: #888;
+  margin-bottom: 10px;
+}
+.worktile h3 {
+  margin: 0 0 8px;
+  font-family: 'Inter', 'Noto Sans SC', sans-serif;
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  color: #111;
+}
+.worktile p {
+  margin: 0 0 16px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #555;
+}
+.worktile__cta {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #111;
+  border-bottom: 1px solid rgba(17,17,17,0.25);
+  padding-bottom: 2px;
+  transition: border-color .2s ease;
+}
+.worktile:hover .worktile__cta { border-color: #111; }
+.worktile--wide {
+  grid-column: 1 / -1;
+}
+.worktile--wide .worktile__media { aspect-ratio: 21 / 9; }
+
+@media (max-width: 820px) {
+  .works-grid { grid-template-columns: 1fr; }
+  .worktile--wide { grid-column: auto; }
+  .worktile--wide .worktile__media { aspect-ratio: 4 / 3; }
 }
 
 .workscroll {
