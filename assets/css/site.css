@@ -3441,7 +3441,173 @@ button:focus-visible {
 }
 .home .grain { opacity: 0.12; }
 
+/* ============================================================
+   HOME — neutral greyscale canvas matching paper-cut photo
+   ============================================================ */
+.home {
+  background: #f6f3ee;
+  --paper: #f6f3ee;
+  --paper-2: #efece5;
+  --card: #f0ede6;
+  --line: #d6d3cc;
+  --line-soft: #e4e1da;
+  --ink: #111111;
+}
+.home .grain { opacity: 0.08; }
+
 .home .container { max-width: 1480px; }
+
+/* ============================================================
+   HERO — aurora gradient (Nucleate reference)
+   ============================================================ */
+.hero--aurora {
+  position: relative;
+  min-height: 100vh;
+  padding: 140px 0 80px;
+  overflow: hidden;
+  background: #f6f3ee;
+  isolation: isolate;
+}
+.hero__aurora {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  /* layered soft blobs */
+  background:
+    radial-gradient(60% 60% at 18% 28%, #f7d9a6 0%, rgba(247,217,166,0) 70%),
+    radial-gradient(55% 55% at 42% 18%, #f6c8a0 0%, rgba(246,200,160,0) 72%),
+    radial-gradient(50% 55% at 58% 38%, #f5bfa8 0%, rgba(245,191,168,0) 75%),
+    radial-gradient(65% 60% at 78% 22%, #e9e6ee 0%, rgba(233,230,238,0) 70%),
+    radial-gradient(45% 40% at 30% 78%, #fbead4 0%, rgba(251,234,212,0) 70%),
+    radial-gradient(100% 80% at 100% 100%, #eae7e2 0%, rgba(234,231,226,0) 65%),
+    #f6f3ee;
+  filter: blur(40px) saturate(95%);
+  transform: scale(1.2) translateZ(0);
+  animation: auroraShift 18s ease-in-out infinite alternate;
+}
+@keyframes auroraShift {
+  0%   { transform: scale(1.2) translate(0,0) translateZ(0); }
+  100% { transform: scale(1.25) translate(-2%, 1.5%) translateZ(0); }
+}
+.hero__aurora-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: calc(100vh - 220px);
+}
+.hero__aurora-body {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 80px;
+  align-items: end;
+  padding-bottom: 40px;
+}
+.hero__aurora-left { max-width: 760px; }
+.hero__aurora-h {
+  margin: 0;
+  font-family: var(--font-serif, 'Inter', 'Noto Sans SC', sans-serif);
+  font-weight: 800;
+  font-size: clamp(56px, 9vw, 136px);
+  line-height: 0.94;
+  letter-spacing: -0.03em;
+  color: #111111;
+}
+.hero__aurora-h span { display: block; }
+.hero__aurora-right {
+  max-width: 420px;
+  padding-bottom: 14px;
+}
+.hero__aurora-tag {
+  margin: 0 0 18px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #3b68c4;
+}
+.hero__aurora-intro {
+  margin: 0 0 28px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #3a3a3a;
+}
+.hero__aurora-meta {
+  display: flex;
+  gap: 28px;
+  margin: 0 0 28px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(17,17,17,0.14);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #555;
+}
+.hero__aurora-meta b {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #111;
+  margin-bottom: 4px;
+}
+.hero__aurora-cta {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #111;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #111;
+  text-decoration: none;
+  transition: background .25s ease, color .25s ease;
+}
+.hero__aurora-cta:hover { background: #111; color: #fff; }
+
+/* nav tinted over aurora */
+.nav--hero {
+  background: transparent;
+  backdrop-filter: none;
+  border-bottom: none;
+  box-shadow: none;
+}
+.brand--hero .brand__disc {
+  background: #111;
+  color: #f6f3ee;
+}
+.brand--hero .brand__name { color: #111; }
+.nav--hero .nav__menu a {
+  padding: 0;
+  border-radius: 0;
+  background: transparent !important;
+  color: #111 !important;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  transition: opacity .2s ease;
+}
+.nav--hero .nav__menu a:hover { opacity: 0.6; }
+.nav__cta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #111;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .hero--aurora { padding-top: 110px; }
+  .hero__aurora-body {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .hero__aurora-right { max-width: 100%; }
+}
 
 /* ---------- scroll progress ---------- */
 .scroll-progress {

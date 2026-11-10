@@ -13,9 +13,9 @@
 <div class="grain" aria-hidden="true"></div>
 <div class="scroll-progress" aria-hidden="true"><i></i></div>
 
-<header class="nav" id="nav">
+<header class="nav nav--hero" id="nav">
   <div class="container nav__inner">
-    <a class="brand" href="index.html">
+    <a class="brand brand--hero" href="index.html">
       <span class="brand__disc">WY</span>
       <span class="brand__name">Wang Yao</span>
     </a>
@@ -23,11 +23,10 @@
       <a href="#works">作品</a>
       <a href="#approach">理念</a>
       <a href="#about">关于</a>
-      <a href="#research">研究</a>
       <a href="#contact">联系</a>
     </nav>
     <div class="nav__right">
-      <a class="btn btn--ghost" href="#works">查看作品 <span class="btn__arrow">↗</span></a>
+      <a class="nav__cta" href="#contact">联系我 →</a>
       <button class="nav__burger" id="burger" aria-label="打开菜单" aria-expanded="false">
         <span></span><span></span>
       </button>
@@ -37,100 +36,34 @@
 
 <main>
   <!-- ============================= HERO ============================= -->
-  <section class="hero" id="hero">
-    <div class="container">
-      <figure class="cover" data-reveal aria-label="等高线风格抽象形态封面">
-        <span class="cover__brand"><b>WY</b><i>Portfolio</i></span>
-        <span class="cover__tags" aria-hidden="true"><i>Form</i><i>Material</i><i>CMF</i></span>
+  <section class="hero hero--aurora" id="hero">
+    <div class="hero__aurora" aria-hidden="true"></div>
+    <div class="container hero__aurora-inner">
 
-        <div class="cover__text">
-          <p class="cover__eyebrow">Portfolio — 2022 / 2025&nbsp;&nbsp;·&nbsp;&nbsp;工业产品设计</p>
-          <h2 class="cover__h">Wang Yao<br><i class="cover__h-cn">王 瑶 · 工业产品设计师</i><span class="cover__h-sub">家具设计与工程 · 南京林业大学</span></h2>
-          <p class="cover__sub">善于观察世界，以理性分析为方法，关注环保与节能议题，力求在设计中实现可持续价值；具备良好的沟通与协调能力，能够在团队中高效推动项目的落地与实现。</p>
-          <div class="cover__cta">
-            <a class="btn" href="#works">浏览作品 <span class="btn__arrow">↗</span></a>
-            <a class="btn btn--ghost" href="#contact">联系我</a>
+      <div class="hero__aurora-body" data-reveal>
+        <div class="hero__aurora-left">
+          <h1 class="hero__aurora-h" data-split>
+            <span>Design</span><br>
+            <span>that listens.</span>
+          </h1>
+        </div>
+
+        <div class="hero__aurora-right">
+          <p class="hero__aurora-tag">Portfolio · 2022 / 2025 &nbsp;·&nbsp; 工业产品设计</p>
+          <p class="hero__aurora-intro">
+            王瑶，工业产品设计师，南京林业大学家具设计与工程专业。关注环保与节能议题，以理性分析为方法，让产品进入真实生活场景。
+          </p>
+          <div class="hero__aurora-meta">
+            <span><b>05</b> Selected Works</span>
+            <span><b>08</b> Design Awards</span>
+            <span><b>03</b> Research Projects</span>
           </div>
+          <a class="hero__aurora-cta" href="#works">浏览作品 →</a>
         </div>
-
-        <div class="cover__art-wrap">
-          <svg class="cover__art" viewBox="0 0 1000 625" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-            <defs>
-              <filter id="cutShadowSoft" x="-30%" y="-30%" width="160%" height="170%">
-                <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#000000" flood-opacity="0.20"/>
-              </filter>
-              <filter id="cutShadow" x="-30%" y="-30%" width="160%" height="170%">
-                <feDropShadow dx="1" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.26"/>
-              </filter>
-              <linearGradient id="cutG1" x1="16%" y1="2%" x2="76%" y2="98%">
-                <stop offset="0%" stop-color="#ffffff"/><stop offset="100%" stop-color="#ececec"/>
-              </linearGradient>
-              <linearGradient id="cutG2" x1="16%" y1="2%" x2="76%" y2="98%">
-                <stop offset="0%" stop-color="#fbfbfb"/><stop offset="100%" stop-color="#e6e6e6"/>
-              </linearGradient>
-              <linearGradient id="cutG3" x1="16%" y1="2%" x2="76%" y2="98%">
-                <stop offset="0%" stop-color="#f6f6f6"/><stop offset="100%" stop-color="#dcdcdc"/>
-              </linearGradient>
-              <linearGradient id="cutG4" x1="16%" y1="2%" x2="76%" y2="98%">
-                <stop offset="0%" stop-color="#efefef"/><stop offset="100%" stop-color="#cdcdcd"/>
-              </linearGradient>
-              <linearGradient id="cutG5" x1="16%" y1="2%" x2="76%" y2="98%">
-                <stop offset="0%" stop-color="#c9c9c9"/><stop offset="100%" stop-color="#a3a3a3"/>
-              </linearGradient>
-            </defs>
-
-            <g class="cover__cut">
-              <path filter="url(#cutShadowSoft)" fill="url(#cutG1)" d="M782 312C782 373.7 732 452.3 685 497C638 541.7 559.8 581.8 500 580C440.2 578.2 370.7 530.7 326 486C281.3 441.3 231.7 369.7 232 312C232.3 254.3 283.3 178.7 328 140C372.7 101.3 440.5 82.2 500 80C559.5 77.8 638 88.3 685 127C732 165.7 782 250.3 782 312Z"/>
-              <path filter="url(#cutShadow)" fill="url(#cutG2)" transform="translate(-5 -7) rotate(-5 500 312) translate(500 312) scale(0.855) translate(-500 -312)" d="M782 312C782 373.7 732 452.3 685 497C638 541.7 559.8 581.8 500 580C440.2 578.2 370.7 530.7 326 486C281.3 441.3 231.7 369.7 232 312C232.3 254.3 283.3 178.7 328 140C372.7 101.3 440.5 82.2 500 80C559.5 77.8 638 88.3 685 127C732 165.7 782 250.3 782 312Z"/>
-              <path filter="url(#cutShadow)" fill="url(#cutG3)" transform="translate(3 -2) rotate(3 500 312) translate(500 312) scale(0.705) translate(-500 -312)" d="M782 312C782 373.7 732 452.3 685 497C638 541.7 559.8 581.8 500 580C440.2 578.2 370.7 530.7 326 486C281.3 441.3 231.7 369.7 232 312C232.3 254.3 283.3 178.7 328 140C372.7 101.3 440.5 82.2 500 80C559.5 77.8 638 88.3 685 127C732 165.7 782 250.3 782 312Z"/>
-              <path filter="url(#cutShadow)" fill="url(#cutG4)" transform="translate(-2 6) rotate(-3 500 312) translate(500 312) scale(0.555) translate(-500 -312)" d="M782 312C782 373.7 732 452.3 685 497C638 541.7 559.8 581.8 500 580C440.2 578.2 370.7 530.7 326 486C281.3 441.3 231.7 369.7 232 312C232.3 254.3 283.3 178.7 328 140C372.7 101.3 440.5 82.2 500 80C559.5 77.8 638 88.3 685 127C732 165.7 782 250.3 782 312Z"/>
-              <path filter="url(#cutShadow)" fill="url(#cutG5)" transform="translate(-6 14) rotate(2 500 312) translate(500 312) scale(0.405) translate(-500 -312)" d="M782 312C782 373.7 732 452.3 685 497C638 541.7 559.8 581.8 500 580C440.2 578.2 370.7 530.7 326 486C281.3 441.3 231.7 369.7 232 312C232.3 254.3 283.3 178.7 328 140C372.7 101.3 440.5 82.2 500 80C559.5 77.8 638 88.3 685 127C732 165.7 782 250.3 782 312Z"/>
-            </g>
-
-            <g class="cover__cut-text" aria-hidden="true">
-              <text x="492" y="336">PORTFOLIO</text>
-              <text x="492" y="360" class="cover__cut-text-strong">WANG YAO</text>
-            </g>
-          </svg>
-        </div>
-      </figure>
-
-      <div class="hero__strip">
-        <dl class="hero__meta">
-          <div><dt>Projects</dt><dd>05</dd></div>
-          <div><dt>Awards</dt><dd>08</dd></div>
-          <div><dt>Research</dt><dd>03</dd></div>
-          <div><dt>Internship</dt><dd>02</dd></div>
-          <div><dt>Based in</dt><dd>南京</dd></div>
-        </dl>
-        <a class="scrollcue" href="#works">Scroll to see more <span aria-hidden="true">↓</span></a>
       </div>
-    </div>
-  </section>
 
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker__track">
-      <span>Industrial Product Design</span>
-      <span>可持续设计 Sustainable</span>
-      <span>模块化 Modular</span>
-      <span>Flow &amp; Integration</span>
-      <span>服务系统 Service System</span>
-      <span>家具与空间 Furniture &amp; Space</span>
-      <span>设计与研究 Research</span>
-      <span>Nanjing Forestry University</span>
-      <span>Industrial Product Design</span>
-      <span>可持续设计 Sustainable</span>
-      <span>模块化 Modular</span>
-      <span>Flow &amp; Integration</span>
-      <span>服务系统 Service System</span>
-      <span>家具与空间 Furniture &amp; Space</span>
-      <span>设计与研究 Research</span>
-      <span>Nanjing Forestry University</span>
     </div>
-  </div>
-
-  <!-- ============================= WORKS ============================= -->
-  <section class="works container" id="works">
+  </section>"works container" id="works">
     <div class="section-head">
       <div>
         <p class="eyebrow">Selected Works · 01 — 05</p>
