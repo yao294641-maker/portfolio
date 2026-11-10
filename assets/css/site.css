@@ -123,7 +123,7 @@ sup { font-size: 0.5em; vertical-align: super; line-height: 0; }
   padding: 0 var(--pad);
 }
 
-.section { padding: var(--sec) 0; }
+.section { padding-top: var(--sec); padding-bottom: var(--sec); }
 
 .mono {
   font-family: var(--font-mono);
@@ -483,19 +483,29 @@ article[id] { scroll-margin-top: 88px; }
    ============================================================ */
 .works-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 24px;
 }
 
 .worktile {
   display: flex;
   flex-direction: column;
+  grid-column: span 2;
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
   background: var(--card);
   overflow: hidden;
   transition: border-color 0.35s var(--ease), transform 0.35s var(--ease);
 }
+
+/* 第一排两张横向大卡：占 6 列栅格的一半宽度 */
+.worktile--lg { grid-column: span 3; }
+
+.worktile--lg .worktile__media { aspect-ratio: 16 / 10; }
+
+.worktile--lg .worktile__info { padding: 22px 24px 24px; }
+
+.worktile--lg .worktile__info h3 { font-size: clamp(21px, 2vw, 26px); }
 
 .worktile:hover { border-color: var(--line-strong); }
 
@@ -2518,7 +2528,6 @@ article[id] { scroll-margin-top: 88px; }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1100px) {
-  .works-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .details-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .aboutv { grid-template-columns: 268px minmax(0, 1fr); }
@@ -2635,6 +2644,8 @@ article[id] { scroll-margin-top: 88px; }
 
 @media (max-width: 760px) {
   .works-grid { grid-template-columns: minmax(0, 1fr); }
+  .worktile,
+  .worktile--lg { grid-column: span 1; }
   .steps { grid-template-columns: minmax(0, 1fr); }
 
   .bar {
