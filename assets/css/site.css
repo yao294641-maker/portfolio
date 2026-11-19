@@ -3468,10 +3468,8 @@ html[data-theme="dark"] .brand__mark .brand-mark { stroke: #f5f5f7; fill: #f5f5f
 /* ---------- Rover Hero 全宽产品图 ---------- */
 .proj-hero-full {
   position: relative;
-  margin-top: 0;
-  margin-left: calc(-1 * clamp(20px, 4vw, 56px));
-  margin-right: calc(-1 * clamp(20px, 4vw, 56px));
-  width: calc(100% + clamp(40px, 8vw, 112px));
+  margin: 0;
+  width: 100%;
   height: 72svh;
   min-height: 480px;
   max-height: 900px;
@@ -3707,113 +3705,100 @@ html[data-theme="dark"] .brand__mark .brand-mark { stroke: #f5f5f7; fill: #f5f5f
   line-height: 1.5;
 }
 
-/* ---------- APP 滚动联动手机原型 ---------- */
-.app-proto {
-  position: sticky;
-  top: calc(var(--navh) + 24px);
-  display: grid;
-  gap: 20px;
-  justify-items: center;
-  align-self: start;
-}
-.app-proto__phone {
-  width: 240px;
-  aspect-ratio: 9 / 16.5;
-  background: #000;
-  border-radius: 44px;
-  padding: 10px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.18);
-  position: relative;
-  overflow: hidden;
-}
-.app-proto__phone::before {
-  content: "";
-  position: absolute;
-  top: 10px; left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 22px;
-  background: #000;
-  border-radius: 0 0 16px 16px;
-  z-index: 3;
-}
-.app-proto__screen {
-  width: 100%;
-  height: 100%;
-  border-radius: 34px;
+/* ---------- APP：全板 + 编号规格 ---------- */
+.app-plate {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
   overflow: hidden;
   background: var(--paper-2);
-  position: relative;
 }
-.app-proto__screen img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 0.35s var(--ease);
+.app-plate img { width: 100%; height: auto; cursor: zoom-in; }
+.app-plate .proj-cap {
+  margin: 0;
+  padding: 12px 16px;
+  border-top: 1px solid var(--line);
+  background: var(--paper);
 }
-.app-proto__phone-label {
+
+.app-spec-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: stretch;
+}
+
+.app-spec-block { display: flex; flex-direction: column; }
+
+.app-spec-block__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 14px;
+}
+.app-spec-block__head h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.1vw, 26px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.app-spec { margin: 0; flex: 1; display: grid; grid-auto-rows: 1fr; }
+.app-spec__row {
+  display: grid;
+  grid-template-columns: minmax(0, 38%) minmax(0, 1fr);
+  gap: 20px;
+  padding: 16px 0 18px;
+  border-top: 1px solid var(--line);
+}
+.app-spec__row:last-child { border-bottom: 1px solid var(--line); }
+.app-spec dt {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.app-spec__no {
+  display: block;
+  margin-bottom: 4px;
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 10.5px;
+  font-weight: 400;
   letter-spacing: 0.1em;
   color: var(--muted);
-  text-transform: uppercase;
-  text-align: center;
 }
-
-.app-feature-tabs {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.app-feature-tab {
-  padding: 8px 14px;
-  border-radius: var(--r-pill);
-  border: 1px solid var(--line);
-  background: var(--paper);
-  font-size: 13px;
-  color: var(--ink);
-  cursor: pointer;
-  transition: background 0.2s var(--ease), border-color 0.2s var(--ease), color 0.2s var(--ease);
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-weight: 400;
-}
-.app-feature-tab:hover { border-color: var(--accent); }
-.app-feature-tab.is-active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
-}
-.app-feature-tab__no {
+.app-spec dt em {
+  display: block;
+  margin-top: 3px;
   font-family: var(--font-mono);
-  font-size: 11px;
-  opacity: 0.7;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
-
-.app-proto-layout {
-  display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
-  gap: 56px;
-  align-items: start;
+.app-spec dd {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--ink-soft);
 }
 
 @media (max-width: 1068px) {
-  .app-proto-layout { grid-template-columns: 240px minmax(0, 1fr); gap: 32px; }
-  .app-proto__phone { width: 200px; }
+  .app-spec-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
 }
 
 @media (max-width: 734px) {
   html, body { overflow-x: hidden; }
-  .app-proto-layout {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 32px;
-  }
-  .app-proto {
-    position: static;
-    order: -1;
-  }
-  .app-proto__phone { width: 220px; }
+  .app-spec__row { grid-template-columns: minmax(0, 1fr); gap: 8px; padding: 14px 0 16px; }
+  .app-plate { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .app-plate img { width: 1080px; max-width: none; }
+  .app-plate .proj-cap { position: sticky; left: 0; }
   .proj-hero-full__meta { display: none; }
 }
 
@@ -3834,6 +3819,54 @@ html[data-theme="dark"] .brand__mark .brand-mark { stroke: #f5f5f7; fill: #f5f5f
 }
 .plate-link:hover { color: var(--accent-soft); }
 .plate-link svg { width: 12px; height: 12px; }
+
+/* ---------- 图与文等长：图版旁的说明收进等高注释面板 ---------- */
+@media (min-width: 1069px) {
+  .g12:has(> figure),
+  .g12:has(> .form-strip) { align-items: stretch; }
+
+  /* 图版旁的说明文字收进等高的注释面板，底边与图版齐平 */
+  .g12:has(> figure) > div,
+  .g12:has(> .form-strip) > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: clamp(20px, 2vw, 30px);
+    border-radius: var(--r-lg);
+    background: var(--paper-2);
+  }
+
+  .g12:has(> figure) > div > .brief-rows,
+  .g12:has(> .form-strip) > div > .brief-rows {
+    display: grid;
+    flex: 1;
+    grid-auto-rows: 1fr;
+  }
+  .g12:has(> figure) > div > .brief-rows > div,
+  .g12:has(> .form-strip) > div > .brief-rows > div { align-items: center; }
+
+  /* 竖构图研究板：限高居中，作为「装裱版」呈现，避免单侧过长 */
+  .g12 .form-strip img {
+    max-height: min(76svh, 700px);
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .mood__fig img {
+    max-height: min(88svh, 860px);
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* 情绪板：主题列表撑满图版高度，首末分隔线与图版上下边缘齐平 */
+  .mood__themes {
+    align-self: stretch;
+    grid-auto-rows: 1fr;
+  }
+  .mood__themes li { align-items: center; }
+  .mood__themes li:last-child { border-bottom: 1px solid var(--line); }
+}
 
 /* ---------- 移动端 Rail 圆点 ---------- */
 @media (max-width: 1100px) {

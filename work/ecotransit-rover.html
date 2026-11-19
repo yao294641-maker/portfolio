@@ -559,115 +559,77 @@
         </header>
 
         <div class="mod__body app-case">
-          <!-- ===== 居民端 ===== -->
-          <section class="app-role app-role--resident" aria-labelledby="app-resident-title">
-            <div class="mini-head" data-reveal>
-              <h3 id="app-resident-title">居民端 · 01—06</h3>
-              <span class="mono">Resident App</span>
-            </div>
+          <figure class="app-plate" data-zoom data-reveal>
+            <img src="../assets/img/rover-original-app.jpg" alt="EcoTransit Rover APP 交互全板：居民端 01—06、管理端 07—11 与关键界面细节" loading="lazy">
+            <figcaption class="proj-cap">
+              <span>APP 交互全板 — 居民端 01—06 / 管理端 07—11</span>
+              <span class="mono">Fig. 05 · 点击放大</span>
+            </figcaption>
+          </figure>
 
-            <div class="app-proto-layout">
-              <div class="app-proto" data-reveal>
-                <div class="app-proto__phone">
-                  <div class="app-proto__screen" data-resident-screen>
-                    <img src="../assets/img/rover-app-resident.jpg" alt="居民端 APP 界面预览">
-                  </div>
+          <div class="app-spec-grid">
+            <section class="app-spec-block" aria-labelledby="app-resident-title" data-reveal>
+              <header class="app-spec-block__head">
+                <h3 id="app-resident-title">居民端</h3>
+                <span class="mono">Resident App · 01—06</span>
+              </header>
+              <dl class="app-spec">
+                <div class="app-spec__row">
+                  <dt><i class="app-spec__no">01</i>选择身份<em>Identity</em></dt>
+                  <dd>界面设计简洁，用户只需选择“居民”或“管理者”即可快速进入对应系统；通过身份入口区分角色，保证后续功能与权限的精准匹配。</dd>
                 </div>
-                <span class="app-proto__phone-label">Resident · 1 of 6</span>
-              </div>
+                <div class="app-spec__row">
+                  <dt><i class="app-spec__no">02</i>用户首页<em>Home</em></dt>
+                  <dd>以数据卡片展示投递量、碳减排、积分等核心指标，把不可见的环保行为转化为可感知的反馈。</dd>
+                </div>
+                <div class="app-spec__row">
+                  <dt><i class="app-spec__no">03</i>呼叫车辆<em>Call Rover</em></dt>
+                  <dd>地图交互展示车辆实时位置与预计到达时间，一键呼叫智能沃肥车上门收运。</dd>
+                </div>
+                <div class="app-spec__row">
+                  <dt><i class="app-spec__no">04</i>投递入口<em>Drop-off</em></dt>
+                  <dd>采用扫码开口方式，保障投递过程的智能化与溯源性；简单操作降低学习成本，避免误投或乱投。</dd>
+                </div>
+                <div class="app-spec__row">
+                  <dt><i class="app-spec__no">05</i>我的积分<em>Points</em></dt>
+                  <dd>积分系统将绿色行为与奖励挂钩，可兑换绿植或环保小礼品。今日累计 128 kg 厨余投放、73 kg 沃肥生成与 1,036 积分，形成持续参与的激励循环。</dd>
+                </div>
+                <div class="app-spec__row">
+                  <dt><i class="app-spec__no">06</i>沃肥进度<em>Compost</em></dt>
+                  <dd>可视化饼图与进度条展示厨余垃圾转化为有机肥的比例，用户可追踪每次投递的处理结果，提升参与感与信任感。</dd>
+                </div>
+              </dl>
+            </section>
 
-              <div class="app-proto-content">
-                <div class="app-feature-tabs" data-reveal>
-                  <button class="app-feature-tab is-active" data-target="01"><span class="app-feature-tab__no">01</span>选择身份</button>
-                  <button class="app-feature-tab" data-target="02"><span class="app-feature-tab__no">02</span>用户首页</button>
-                  <button class="app-feature-tab" data-target="03"><span class="app-feature-tab__no">03</span>呼叫车辆</button>
-                  <button class="app-feature-tab" data-target="04"><span class="app-feature-tab__no">04</span>投递入口</button>
-                  <button class="app-feature-tab" data-target="05"><span class="app-feature-tab__no">05</span>我的积分</button>
-                  <button class="app-feature-tab" data-target="06"><span class="app-feature-tab__no">06</span>沃肥进度</button>
+            <section class="app-spec-block" aria-labelledby="app-admin-title" data-reveal>
+              <header class="app-spec-block__head">
+                <h3 id="app-admin-title">管理端</h3>
+                <span class="mono">Administrator App · 07—11</span>
+              </header>
+              <dl class="app-spec">
+                <div class="app-spec__row">
+                  <dt><i class="app-spec__no">07</i>管理员首页<em>Dashboard</em></dt>
+                  <dd>采用仪表盘式设计，车辆数、运行时长、碳减排等核心数据一目了然；运维、告警、数据报表三个模块化入口便于快速管理。</dd>
                 </div>
-
-                <div class="app-feature-detail" data-feature="01">
-                  <h4>选择身份</h4>
-                  <p>界面设计简洁，用户只需选择"居民"或"管理者"即可快速进入对应系统。通过身份入口区分角色，保证后续功能与权限的精准匹配。</p>
+                <div class="app-spec__row">
+                  <dt><i class="app-spec__no">08</i>溢满预警<em>Capacity Alert</em></dt>
+                  <dd>车辆或箱体即将满载时推送告警卡片，附当前容量与预计溢满时间，管理员可直接分配处理任务，保障运维高效。</dd>
                 </div>
-                <div class="app-feature-detail" data-feature="02" hidden>
-                  <h4>用户首页</h4>
-                  <p>首页以数据卡片形式展示"投递量、碳减排、积分"等核心指标，强化绿色行为感知。</p>
+                <div class="app-spec__row">
+                  <dt><i class="app-spec__no">09</i>运行设置<em>Operations</em></dt>
+                  <dd>地图追踪车辆实时位置，管理员可调整路线与任务分配，并远程修改运行参数，保证系统灵活可控。</dd>
                 </div>
-                <div class="app-feature-detail" data-feature="03" hidden>
-                  <h4>呼叫车辆</h4>
-                  <p>地图交互展示车辆位置与预计到达时间，增强用户等待体验。用户可一键呼叫智能沃肥车，实现灵活的垃圾上门收运。</p>
+                <div class="app-spec__row">
+                  <dt><i class="app-spec__no">10</i>运维提醒<em>Maintenance</em></dt>
+                  <dd>系统自动生成运维任务清单，提醒定期检修与维护；分项记录提高可追溯性，减少设备故障率。</dd>
                 </div>
-                <div class="app-feature-detail" data-feature="04" hidden>
-                  <h4>投递入口</h4>
-                  <p>采用扫码开口方式，保障投递过程的智能化与溯源性。简单操作降低学习成本，避免误投或乱投。</p>
+                <div class="app-spec__row">
+                  <dt><i class="app-spec__no">11</i>数据统计<em>Analytics</em></dt>
+                  <dd>提供趋势图与柱状图，支持按时间、区域、指标分类分析；数据可导出，帮助管理者做决策与展示环保成效。</dd>
                 </div>
-                <div class="app-feature-detail" data-feature="05" hidden>
-                  <h4>我的积分</h4>
-                  <p>积分系统将绿色行为与奖励挂钩，用户能兑换绿植或环保小礼品。通过可视化卡片设计强化激励，鼓励居民持续参与。</p>
-                  <aside class="app-points-inline">
-                    <span class="app-points-inline__item"><b>128<sup>kg</sup></b>厨余投放</span>
-                    <span class="app-points-inline__item"><b>73<sup>kg</sup></b>沃肥生成</span>
-                    <span class="app-points-inline__item"><b>1,036</b>积分</span>
-                  </aside>
-                </div>
-                <div class="app-feature-detail" data-feature="06" hidden>
-                  <h4>沃肥进度</h4>
-                  <p>可视化饼图和进度条直观展示厨余垃圾转化为有机肥的比例。用户可以追踪每次投递的处理结果，提升参与感与信任感。</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- ===== 管理端 ===== -->
-          <section class="app-role app-role--admin" aria-labelledby="app-admin-title">
-            <div class="mini-head" data-reveal>
-              <h3 id="app-admin-title">管理端 · 07—11</h3>
-              <span class="mono">Administrator App</span>
-            </div>
-
-            <div class="app-proto-layout">
-              <div class="app-proto" data-reveal>
-                <div class="app-proto__phone">
-                  <div class="app-proto__screen" data-admin-screen>
-                    <img src="../assets/img/rover-app-admin.jpg" alt="管理端 APP 界面预览">
-                  </div>
-                </div>
-                <span class="app-proto__phone-label">Admin · 1 of 5</span>
-              </div>
-
-              <div class="app-proto-content">
-                <div class="app-feature-tabs" data-reveal>
-                  <button class="app-feature-tab is-active" data-target="07"><span class="app-feature-tab__no">07</span>管理员首页</button>
-                  <button class="app-feature-tab" data-target="08"><span class="app-feature-tab__no">08</span>溢满预警</button>
-                  <button class="app-feature-tab" data-target="09"><span class="app-feature-tab__no">09</span>运行设置</button>
-                  <button class="app-feature-tab" data-target="10"><span class="app-feature-tab__no">10</span>运维提醒</button>
-                  <button class="app-feature-tab" data-target="11"><span class="app-feature-tab__no">11</span>数据统计</button>
-                </div>
-
-                <div class="app-feature-detail" data-feature="07">
-                  <h4>管理员首页</h4>
-                  <p>采用仪表盘式设计，核心数据一目了然——车辆数、运行时长、碳减排等。模块化功能入口便于快速管理。</p>
-                </div>
-                <div class="app-feature-detail" data-feature="08" hidden>
-                  <h4>溢满预警</h4>
-                  <p>当车辆或箱体即将满载时，系统推送告警卡片提醒。管理员可直接分配处理任务，保障运维高效。</p>
-                </div>
-                <div class="app-feature-detail" data-feature="09" hidden>
-                  <h4>运行设置</h4>
-                  <p>地图追踪车辆实时位置，管理员可调整路线和任务分配。支持远程参数设置，保证系统灵活可控。</p>
-                </div>
-                <div class="app-feature-detail" data-feature="10" hidden>
-                  <h4>运维提醒</h4>
-                  <p>系统自动生成运维任务清单，提醒定期检修与维护。分项记录提高可追溯性，减少设备故障率。</p>
-                </div>
-                <div class="app-feature-detail" data-feature="11" hidden>
-                  <h4>数据统计</h4>
-                  <p>提供趋势图和柱状图，支持按时间、区域、指标分类分析。数据可导出，帮助管理者做决策和展示环保成效。</p>
-                </div>
-              </div>
-            </div>
-          </section>
+              </dl>
+            </section>
+          </div>
 
           <a class="plate-link" href="#lightbox" data-plate="../assets/img/rover-original-app.jpg">查看原始展板（PDF P.11） <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
         </div>
