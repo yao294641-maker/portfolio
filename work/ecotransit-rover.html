@@ -126,7 +126,6 @@
             </dl>
           </div>
         </div>
-        <a class="plate-link" href="#lightbox" data-plate="../assets/img/rover-original-intro.jpg" aria-label="查看原始展板 PDF 第 7 页">查看原始展板（PDF P.07） <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
       </section>
       <section class="mod" id="m02" aria-labelledby="m02-title">
         <header class="mod__head" data-reveal>
@@ -161,9 +160,33 @@
               </dl>
             </div>
 
-            <figure class="c-5 form-strip" data-zoom data-reveal style="--d:100ms">
-              <img src="../assets/img/rover-background.jpg" alt="城市农业、屋顶农园、社区支持农业、食物系统本地化与未来愿景原始研究图" loading="lazy">
-              <figcaption class="proj-cap"><span>城市农业与未来愿景</span><span class="mono">Background</span></figcaption>
+            <figure class="c-5 figure-card" data-reveal style="--d:100ms">
+              <svg viewBox="0 0 320 320" role="img" aria-label="园区食物闭环：生产、消费、废弃、就地处理、肥料回归土壤">
+                <circle class="loop-line" cx="160" cy="160" r="104"/>
+                <circle class="loop-node" cx="160" cy="56" r="29"/>
+                <text class="loop-label" x="160" y="55" text-anchor="middle">生产</text>
+                <text class="loop-sub" x="160" y="68" text-anchor="middle">GROW</text>
+
+                <circle class="loop-node" cx="259" cy="128" r="29"/>
+                <text class="loop-label" x="259" y="127" text-anchor="middle">消费</text>
+                <text class="loop-sub" x="259" y="140" text-anchor="middle">DINE</text>
+
+                <circle class="loop-node" cx="221" cy="244" r="29"/>
+                <text class="loop-label" x="221" y="243" text-anchor="middle">废弃</text>
+                <text class="loop-sub" x="221" y="256" text-anchor="middle">WASTE</text>
+
+                <circle class="loop-node" cx="99" cy="244" r="29" style="stroke:var(--accent);stroke-width:1.6;"/>
+                <text class="loop-label" x="99" y="243" text-anchor="middle">处理</text>
+                <text class="loop-sub" x="99" y="256" text-anchor="middle">ROVER</text>
+
+                <circle class="loop-node" cx="61" cy="128" r="29"/>
+                <text class="loop-label" x="61" y="127" text-anchor="middle">肥料</text>
+                <text class="loop-sub" x="61" y="140" text-anchor="middle">SOIL</text>
+
+                <text x="160" y="156" text-anchor="middle" font-size="9" letter-spacing="2" fill="var(--muted)">CAMPUS LOOP</text>
+                <text x="160" y="174" text-anchor="middle" font-size="12" font-weight="600" fill="var(--ink)">园区内闭环</text>
+              </svg>
+              <figcaption><b>食物系统本地化</b><span>Production → Consumption → Waste → Soil</span></figcaption>
             </figure>
           </div>
 
@@ -197,9 +220,30 @@
           </div>
 
           <div class="g12">
-            <figure class="c-6 form-strip" data-zoom data-reveal>
-              <img src="../assets/img/rover-resource-trend.jpg" alt="全球一次性塑料禁令地区分布、可降解材料趋势与2010至2050年有机废弃物资源化率原图" loading="lazy">
-              <figcaption class="proj-cap"><span>禁令、材料与资源化率趋势</span><span class="mono">Research</span></figcaption>
+            <figure class="c-6 figure-card" data-reveal>
+              <div class="scale-list" role="list" aria-label="一次性塑料管控四级强度">
+                <div class="scale-row" role="listitem">
+                  <b>区域性统一禁止</b>
+                  <span>区域层面统一停止投放一次性塑料</span>
+                  <span class="scale-meter"><i class="on is-accent"></i><i class="on is-accent"></i><i class="on is-accent"></i><i class="on is-accent"></i></span>
+                </div>
+                <div class="scale-row" role="listitem">
+                  <b>全国性禁令</b>
+                  <span>覆盖明确的塑料品类</span>
+                  <span class="scale-meter"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+                </div>
+                <div class="scale-row" role="listitem">
+                  <b>国家层面限制</b>
+                  <span>收费、限用或分阶段管控</span>
+                  <span class="scale-meter"><i class="on"></i><i class="on"></i><i></i><i></i></span>
+                </div>
+                <div class="scale-row" role="listitem">
+                  <b>无全国立法</b>
+                  <span>仅地方举措，或信息不足</span>
+                  <span class="scale-meter"><i class="on"></i><i></i><i></i><i></i></span>
+                </div>
+              </div>
+              <figcaption><b>管控强度分级</b><span>Policy Tier · 强 → 弱</span></figcaption>
             </figure>
 
             <div class="c-6" data-reveal style="--d:100ms">
@@ -208,13 +252,17 @@
                 <span class="mono">Global Context</span>
               </div>
               <p class="brief-mid">全球不同地区对一次性塑料采取不同层级的管控，可降解材料为大势所趋。</p>
-              <ul class="proj-tags" aria-label="全球一次性塑料管控地图图例">
-                <li>区域性统一禁止投放</li>
-                <li>全国性禁令覆盖明确品类</li>
-                <li>国家层面限制 / 收费 / 分阶段管控</li>
-                <li>无全国立法 / 仅地方举措或信息不足</li>
-              </ul>
               <p class="brief-mid">废弃物资源化率逐步上升，“废弃物回归生态循环”成为全球共识和必然趋势。</p>
+              <dl class="brief-rows">
+                <div>
+                  <dt>2010 → 2050</dt>
+                  <dd>有机废弃物资源化率由 13% 升至 70%。</dd>
+                </div>
+                <div>
+                  <dt>材料替代</dt>
+                  <dd>管控由限制走向禁用，可降解材料加速替代。</dd>
+                </div>
+              </dl>
             </div>
           </div>
 
@@ -269,16 +317,18 @@
             </svg>
           </div>
 
-          <figure class="scene-strip" data-zoom data-pan>
-            <img src="../assets/img/rover-painpoints.jpg" alt="大型园区与会展中心厨余垃圾临时堆放、渗液清洗、人工收集、外运成本、职业健康风险及管理问题原图" loading="lazy">
-            <figcaption class="proj-cap"><span>现场痛点与问题拆解</span><span class="mono">What difficulties are people facing?</span></figcaption>
-          </figure>
-
           <div data-reveal>
             <div class="mini-head">
-              <h3>五类现场痛点 / Field Pain Points</h3>
-              <span class="mono">大型园区 / 会展中心</span>
+              <h3>痛点的连锁反应</h3>
+              <span class="mono">Waste → Cost</span>
             </div>
+            <ol class="pain-chain" aria-label="痛点连锁链条">
+              <li><b>厨余堆积</b><span>高含水 · 短时发臭</span></li>
+              <li><b>渗液外溢</b><span>清洗频次上升</span></li>
+              <li><b>人工转运</b><span>点位分散 · 重体力</span></li>
+              <li><b>外运处置</b><span>费用与碳排双高</span></li>
+              <li><b>健康暴露</b><span>长期接触高湿垃圾</span></li>
+            </ol>
             <div class="pain-cards">
               <article class="pain-card"><span class="pain-card__no">01</span><div class="pain-card__body"><h4>临时堆放厨余垃圾</h4><p>厨余高含水，短时即发臭，缺乏及时处理手段。</p></div></article>
               <article class="pain-card"><span class="pain-card__no">02</span><div class="pain-card__body"><h4>渗液清洗困难</h4><p>除味、清洗频次与用水量增加，卫生难达标。</p></div></article>
@@ -301,7 +351,6 @@
               <article class="d-item"><i>05</i><div><h4>指标</h4><p>缺 KPI 牵引，难以对齐“资源化率 / 减排”目标。</p></div></article>
             </div>
           </div>
-          <a class="plate-link" href="#lightbox" data-plate="../assets/img/rover-original-research.jpg">查看原始展板（PDF P.08） <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
         </div>
       </section>
 
@@ -317,16 +366,50 @@
         </header>
 
         <div class="mod__body">
-          <div class="detail-plates">
-            <figure data-zoom data-reveal>
-              <img src="../assets/img/rover-product-callouts.jpg" alt="模块化沃肥舱、排气模块、前部倾斜采集区、防震底盘与中部处理舱产品标注原图" loading="lazy">
-              <figcaption class="proj-cap"><span><em>A</em> 车辆模块与采集、处理结构</span><span class="mono">Product Details</span></figcaption>
-            </figure>
-            <figure data-zoom data-reveal style="--d:100ms">
-              <img src="../assets/img/rover-product-units.jpg" alt="产肥承接单元、情感化侧线、四项核心特征、用户流程与痛点策略原图" loading="lazy">
-              <figcaption class="proj-cap"><span><em>B</em> 承接单元、侧线与循环流程</span><span class="mono">Units &amp; Process</span></figcaption>
-            </figure>
-          </div>
+          <figure class="module-map" data-reveal>
+            <svg viewBox="0 0 760 340" role="img" aria-label="Rover 侧向模块剖面：前部倾斜采集区、中部处理舱、尾部沃肥舱、排气模块与四轮防震底盘">
+              <path class="mm-body" d="M70 240 L70 192 Q70 178 84 172 L172 122 Q188 113 210 113 L642 113 Q690 113 690 156 L690 240 Z"/>
+              <!-- zones -->
+              <path class="mm-zone" d="M252 113 L252 240"/>
+              <path class="mm-zone" d="M520 113 L520 240"/>
+              <!-- wheels -->
+              <circle class="mm-wheel" cx="188" cy="243" r="27"/>
+              <circle class="mm-wheel" cx="188" cy="243" r="10"/>
+              <circle class="mm-wheel" cx="574" cy="243" r="27"/>
+              <circle class="mm-wheel" cx="574" cy="243" r="10"/>
+              <!-- in-body markers -->
+              <g>
+                <circle class="mm-num-bg" cx="160" cy="176" r="9"/><text class="mm-num" x="160" y="179">03</text>
+                <text class="mm-label" x="160" y="200" text-anchor="middle">倾斜采集区</text>
+              </g>
+              <g>
+                <circle class="mm-num-bg" cx="386" cy="176" r="9"/><text class="mm-num" x="386" y="179">05</text>
+                <text class="mm-label" x="386" y="200" text-anchor="middle">中部处理舱</text>
+              </g>
+              <g>
+                <circle class="mm-num-bg" cx="605" cy="176" r="9"/><text class="mm-num" x="605" y="179">01</text>
+                <text class="mm-label" x="605" y="200" text-anchor="middle">模块化沃肥舱</text>
+              </g>
+              <!-- external markers -->
+              <g>
+                <line class="mm-lead" x1="470" y1="113" x2="470" y2="86"/>
+                <circle class="mm-num-bg" cx="470" cy="76" r="9"/><text class="mm-num" x="470" y="79">02</text>
+                <text class="mm-label" x="470" y="58" text-anchor="middle">排气模块</text>
+              </g>
+              <g>
+                <line class="mm-lead" x1="330" y1="240" x2="330" y2="266"/>
+                <circle class="mm-num-bg" cx="330" cy="276" r="9"/><text class="mm-num" x="330" y="279">04</text>
+                <text class="mm-label" x="330" y="298" text-anchor="middle">防震底盘 + LIDAR</text>
+              </g>
+              <!-- front slope angle -->
+              <path d="M70 192 L70 240" stroke="var(--accent)" stroke-width="1.4" fill="none"/>
+              <path d="M70 192 L172 122" stroke="var(--accent)" stroke-width="1.4" stroke-dasharray="3 3" fill="none"/>
+              <text x="96" y="214" font-size="9" fill="var(--accent)" letter-spacing=".06em">20°–30°</text>
+              <!-- ground -->
+              <line x1="30" y1="283" x2="730" y2="283" stroke="var(--line)" stroke-width="1"/>
+            </svg>
+            <figcaption><b>侧向模块分区</b><span>Collect — Process — Compost · 侧线圆润过渡</span></figcaption>
+          </figure>
 
           <div data-reveal>
             <div class="mini-head">
@@ -404,7 +487,6 @@
               <li class="layer"><i>04</i><div><b>沃肥产出</b><span>资源化落地</span></div><p>产出有机肥基料，供园区绿化。</p></li>
             </ol>
           </div>
-          <a class="plate-link" href="#lightbox" data-plate="../assets/img/rover-original-product.jpg">查看原始展板（PDF P.09） <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
         </div>
       </section>
 
@@ -420,38 +502,83 @@
         </header>
 
         <div class="mod__body">
-          <figure class="form-strip" data-zoom data-reveal>
-            <img src="../assets/img/rover-personas.jpg" alt="Jimmy学生与Emmelie管理人员的关注点、使用场景、频率及人物描述原图" loading="lazy">
-            <figcaption class="proj-cap"><span>居民与管理者 Persona</span><span class="mono">Jimmy / Emmelie</span></figcaption>
-          </figure>
-
-          <div class="form-cards">
-            <article class="form-card" data-reveal>
-              <em>PERSONA 01</em>
-              <h4>Jimmy · 学生 · 22</h4>
-              <dl class="brief-rows brief-rows--tight">
-                <div><dt>关注点</dt><dd>自己的绿色贡献、使用便捷。</dd></div>
-                <div><dt>使用场景</dt><dd>小程序。</dd></div>
-                <div><dt>使用频率</dt><dd>高频但轻量。</dd></div>
-              </dl>
+          <div class="persona-grid">
+            <article class="persona" data-reveal>
+              <div class="persona__top">
+                <span class="persona__avatar" aria-hidden="true">JM</span>
+                <div>
+                  <p class="persona__id">Persona 01</p>
+                  <h4 class="persona__name">Jimmy</h4>
+                  <p class="persona__role">学生 · 22 岁</p>
+                </div>
+              </div>
+              <div class="persona__meta">
+                <div><span>关注点</span><b>绿色贡献 · 便捷</b></div>
+                <div><span>使用场景</span><b>小程序</b></div>
+                <div><span>使用频率</span><b>高频 · 轻量</b></div>
+              </div>
               <p>平日里热衷于参与校园绿色低碳实践，盼着能通过操作便捷的小程序，在高频且轻松的使用过程中，顺畅完成厨余垃圾投放，既为校园环保出份力，也能从每一次投放里感受到践行绿色生活的成就感。</p>
             </article>
 
-            <article class="form-card" data-reveal style="--d:100ms">
-              <em>PERSONA 02</em>
-              <h4>Emmelie · 管理人员 · 35</h4>
-              <dl class="brief-rows brief-rows--tight">
-                <div><dt>关注点</dt><dd>垃圾量、肥料产出、预警报告、数据。</dd></div>
-                <div><dt>使用场景</dt><dd>实时监控。</dd></div>
-                <div><dt>使用频率</dt><dd>中频。</dd></div>
-              </dl>
+            <article class="persona" data-reveal style="--d:100ms">
+              <div class="persona__top">
+                <span class="persona__avatar" aria-hidden="true">EM</span>
+                <div>
+                  <p class="persona__id">Persona 02</p>
+                  <h4 class="persona__name">Emmelie</h4>
+                  <p class="persona__role">管理人员 · 35 岁</p>
+                </div>
+              </div>
+              <div class="persona__meta">
+                <div><span>关注点</span><b>产量 · 预警 · 数据</b></div>
+                <div><span>使用场景</span><b>实时监控</b></div>
+                <div><span>使用频率</span><b>中频</b></div>
+              </div>
               <p>统筹智能垃圾车与厨余处理的整体运转，十分关注垃圾收集量、处理时的能耗与沃肥产出情况，会借助实时监控系统中频地查看各类数据，一旦有异常能通过预警报告及时处置，好让整个垃圾处理与资源化流程高效又稳定地服务于大学城园区。</p>
             </article>
           </div>
 
-          <figure class="scene-strip" data-zoom data-pan>
-            <img src="../assets/img/rover-system-map.jpg" alt="用户、智能垃圾车、APP、管理员与大学城园区之间的信息、物质和管理流动系统图" loading="lazy">
-            <figcaption class="proj-cap"><span>系统图 / System Diagram</span><span class="mono">Information · Material · Management</span></figcaption>
+          <figure class="figure-card" data-reveal>
+            <ul class="sys-legend" aria-label="系统图图例">
+              <li><i></i>物质流动</li>
+              <li><i></i>信息流动</li>
+              <li><i></i>管理流动</li>
+            </ul>
+            <svg viewBox="0 0 760 440" role="img" aria-label="用户、智能沃肥车、APP、管理员与大学城园区之间的物质、信息与管理流动">
+              <!-- 物质 -->
+              <path class="sys-edge sys-edge--m" d="M128 162 L207 309"/>
+              <path class="sys-edge sys-edge--m" d="M287 352 L503 352"/>
+              <path class="sys-edge sys-edge--m" d="M543 302 C700 30 200 20 150 74"/>
+              <!-- 信息 -->
+              <path class="sys-edge sys-edge--i" d="M182 132 L333 185"/>
+              <path class="sys-edge sys-edge--i" d="M273 310 L352 242"/>
+              <path class="sys-edge sys-edge--i" d="M410 247 L528 315"/>
+              <!-- 管理 -->
+              <path class="sys-edge sys-edge--g" d="M578 133 L427 185"/>
+              <path class="sys-edge sys-edge--g" d="M590 158 C500 300 390 338 283 338"/>
+              <path class="sys-edge sys-edge--g" d="M600 163 L568 301"/>
+
+              <circle class="sys-node" cx="140" cy="120" r="44"/>
+              <text class="sys-name" x="140" y="118" text-anchor="middle">用户</text>
+              <text class="sys-tag" x="140" y="134" text-anchor="middle">USER</text>
+
+              <circle class="sys-node sys-node--core" cx="380" cy="205" r="50"/>
+              <text class="sys-name" x="380" y="203" text-anchor="middle">APP</text>
+              <text class="sys-tag" x="380" y="219" text-anchor="middle">HUB</text>
+
+              <circle class="sys-node" cx="620" cy="120" r="44"/>
+              <text class="sys-name" x="620" y="118" text-anchor="middle">管理员</text>
+              <text class="sys-tag" x="620" y="134" text-anchor="middle">ADMIN</text>
+
+              <circle class="sys-node" cx="235" cy="352" r="50"/>
+              <text class="sys-name" x="235" y="350" text-anchor="middle" font-size="11.5">智能沃肥车</text>
+              <text class="sys-tag" x="235" y="366" text-anchor="middle">ROVER</text>
+
+              <circle class="sys-node" cx="555" cy="352" r="50"/>
+              <text class="sys-name" x="555" y="350" text-anchor="middle" font-size="11.5">大学城园区</text>
+              <text class="sys-tag" x="555" y="366" text-anchor="middle">CAMPUS</text>
+            </svg>
+            <figcaption><b>系统图 / System Diagram</b><span>Information · Material · Management</span></figcaption>
           </figure>
 
           <div data-reveal>
@@ -471,11 +598,6 @@
               <div><dt>管理员 ↔ 大学城园区</dt><dd>维护场地绿化；反馈沃肥应用效果。</dd></div>
             </dl>
           </div>
-
-          <figure class="scene-strip" data-zoom data-pan>
-            <img src="../assets/img/rover-service-blueprint.jpg" alt="投递垃圾、查看反馈、沃肥产出、数据统计与循环反馈五阶段服务蓝图原图" loading="lazy">
-            <figcaption class="proj-cap"><span>服务蓝图 / Service Blueprint</span><span class="mono">5 Journey Phases</span></figcaption>
-          </figure>
 
           <div class="plans blueprint-table" data-reveal>
             <table>
@@ -544,7 +666,6 @@
               </tbody>
             </table>
           </div>
-          <a class="plate-link" href="#lightbox" data-plate="../assets/img/rover-original-system.jpg">查看原始展板（PDF P.10） <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
         </div>
       </section>
 
@@ -559,13 +680,84 @@
         </header>
 
         <div class="mod__body app-case">
-          <figure class="app-plate" data-zoom data-reveal>
-            <img src="../assets/img/rover-original-app.jpg" alt="EcoTransit Rover APP 交互全板：居民端 01—06、管理端 07—11 与关键界面细节" loading="lazy">
-            <figcaption class="proj-cap">
-              <span>APP 交互全板 — 居民端 01—06 / 管理端 07—11</span>
-              <span class="mono">Fig. 05 · 点击放大</span>
-            </figcaption>
-          </figure>
+          <div class="phones" data-reveal>
+            <div>
+              <div class="phone">
+                <div class="phone__screen">
+                  <div class="phone__status"><span>9:41</span><span>居民端</span></div>
+                  <p class="phone__eyebrow">Good Morning</p>
+                  <p class="phone__title">你好，Jimmy</p>
+                  <div>
+                    <span class="phone__big">128<small>kg 今日投递</small></span>
+                  </div>
+                  <div class="phone__tiles">
+                    <div class="phone__tile"><b>73 kg</b><span>沃肥生成</span></div>
+                    <div class="phone__tile"><b>1,036</b><span>积分</span></div>
+                  </div>
+                  <div class="phone__row"><span>沃肥转化率</span><b>57%</b></div>
+                  <div class="phone__bar"><i style="width:57%"></i></div>
+                  <div class="phone__row"><span>本月绿色目标</span><b>进行中</b></div>
+                </div>
+              </div>
+              <p class="phone-caption"><b>02 · 用户首页</b>投递量、沃肥与积分一眼可见</p>
+            </div>
+
+            <div>
+              <div class="phone">
+                <div class="phone__screen">
+                  <div class="phone__status"><span>9:41</span><span>居民端</span></div>
+                  <p class="phone__title">呼叫沃肥车</p>
+                  <div class="phone__map">
+                    <span class="phone__route"></span>
+                    <span class="phone__pin">车</span>
+                    <span class="phone__me"></span>
+                  </div>
+                  <div class="phone__row"><span>实时位置</span><b>已同步</b></div>
+                  <div class="phone__row"><span>预计到达</span><b>8 分钟</b></div>
+                  <div class="phone__btn">呼叫沃肥车</div>
+                </div>
+              </div>
+              <p class="phone-caption"><b>03 · 呼叫车辆</b>地图显示车辆位置与到达时间</p>
+            </div>
+
+            <div>
+              <div class="phone">
+                <div class="phone__screen">
+                  <div class="phone__status"><span>9:41</span><span>居民端</span></div>
+                  <p class="phone__title">沃肥进度</p>
+                  <div class="phone__ring" aria-hidden="true"></div>
+                  <div class="phone__steps">
+                    <span>已投递<b>128 kg</b></span>
+                    <span>产出沃肥<b>73 kg</b></span>
+                    <span>获得积分<b>1,036</b></span>
+                  </div>
+                  <div class="phone__row"><span>当前阶段</span><b>发酵完成</b></div>
+                  <div class="phone__bar"><i style="width:100%"></i></div>
+                </div>
+              </div>
+              <p class="phone-caption"><b>06 · 沃肥进度</b>追踪每次投递的处理结果</p>
+            </div>
+
+            <div>
+              <div class="phone">
+                <div class="phone__screen">
+                  <div class="phone__status"><span>9:41</span><span>管理端</span></div>
+                  <p class="phone__eyebrow">Dashboard</p>
+                  <p class="phone__title">园区运行看板</p>
+                  <div class="phone__tiles">
+                    <div class="phone__tile"><b>4 台</b><span>在线车辆</span></div>
+                    <div class="phone__tile"><b>18.5 h</b><span>今日运行</span></div>
+                  </div>
+                  <div class="phone__alert"><b>溢满预警 · 82%</b>东区箱体即将满载，建议优先调度。</div>
+                  <div class="phone__bars" aria-hidden="true">
+                    <i style="height:38%"></i><i style="height:55%" class="on"></i><i style="height:42%"></i><i style="height:70%" class="on"></i><i style="height:52%"></i><i style="height:88%" class="on"></i><i style="height:64%"></i>
+                  </div>
+                  <div class="phone__row"><span>运维 · 告警 · 报表</span><b>→</b></div>
+                </div>
+              </div>
+              <p class="phone-caption"><b>07 · 管理员首页</b>车辆、运行与预警集中管理</p>
+            </div>
+          </div>
 
           <div class="app-spec-grid">
             <section class="app-spec-block" aria-labelledby="app-resident-title" data-reveal>
@@ -630,8 +822,6 @@
               </dl>
             </section>
           </div>
-
-          <a class="plate-link" href="#lightbox" data-plate="../assets/img/rover-original-app.jpg">查看原始展板（PDF P.11） <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
         </div>
       </section>
 
