@@ -280,4 +280,95 @@
       if (e.key === "Escape") close();
     });
   }
+
+  /* ---------- theme toggle ---------- */
+  var themeBtn = document.getElementById("themeToggle");
+  if (themeBtn) {
+    var applyTheme = function (mode) {
+      if (mode === "dark") document.documentElement.setAttribute("data-theme", "dark");
+      else if (mode === "light") document.documentElement.setAttribute("data-theme", "light");
+      else document.documentElement.removeAttribute("data-theme");
+      try { localStorage.setItem("wy-theme", mode || "auto"); } catch (e) {}
+    };
+    var savedTheme = "auto";
+    try { savedTheme = localStorage.getItem("wy-theme") || "auto"; } catch (e) {}
+    applyTheme(savedTheme);
+    themeBtn.addEventListener("click", function () {
+      var current = document.documentElement.getAttribute("data-theme");
+      if (current === "dark") applyTheme("light");
+      else if (current === "light") applyTheme("auto");
+      else applyTheme("dark");
+    });
+  }
+
+  /* ---------- APP feature tabs ---------- */
+  document.querySelectorAll(".app-feature-tabs").forEach(function (tabsEl) {
+    var parent = tabsEl.closest(".app-role") || tabsEl.parentElement;
+    var details = parent.querySelectorAll(".app-feature-detail");
+    var screens = {
+      resident: document.querySelector("[data-resident-screen] img"),
+      admin: document.querySelector("[data-admin-screen] img")
+    };
+    var getScreen = function () {
+      var role = parent.classList.contains("app-role--resident") ? "resident" : "admin";
+      return screens[role];
+    };
+    var offsets = {
+      resident: { "01": "0 0", "02": "0 -16.67%", "03": "0 -33.33%", "04": "0 -50%", "05": "0 -66.67%", "06": "0 -83.33%" },
+      admin:    { "07": "0 0", "08": "0 -20%", "09": "0 -40%", "10": "0 -60%", "11": "0 -80%" }
+    };
+    var getRoleKey = function (target) {
+      return parent.classList.contains("app-role--resident") ? "resident" : "admin";
+    };
+    var roleKey = getRoleKey("");
+
+    tabsEl.addEventListener("click", function (e) {
+      var tab = e.target.closest(".app-feature-tab");
+      if (!tab) return;
+      tabsEl.querySelectorAll(".app-feature-tab").forEach(function (t) { t.classList.remove("is-active"); });
+      tab.classList.add("is-active");
+      var target = tab.getAttribute("data-target");
+      details.forEach(function (d) { d.hidden = d.getAttribute("data-feature") !== target; });
+      var screen = getScreen();
+      if (screen) {
+        var offsetMap = offsets[roleKey] || offsets.resident;
+        if (offsetMap[target]) {
+          var parentEl = screen.parentElement;
+          parentEl.style.backgroundImage = "url(" + screen.src + ")";
+          parentEl.style.backgroundSize = "cover";
+          parentEl.style.backgroundPosition = offsetMap[target];
+          screen.style.opacity = "0";
+          setTimeout(function () { screen.style.opacity = "1"; }, 180);
+        }
+      }
+    });
+  });
+
+  /* ---------- rail progress ---------- */
+  var railFill = document.getElementById("railFill");
+  if (railFill) {
+    var sections = document.querySelectorAll(".proj-main .mod");
+    var updateRail = function () {
+      var scrollTop = window.scrollY;
+      var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      if (!docHeight) return;
+      var pct = Math.min(1, Math.max(0, scrollTop / docHeight));
+      railFill.style.height = (pct * 100).toFixed(1) + "%";
+    };
+    updateRail();
+    window.addEventListener("scroll", updateRail, { passive: true });
+  }
+
+  /* ---------- plate-link open lightbox ---------- */
+  document.querySelectorAll(".plate-link").forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      var src = link.getAttribute("data-plate");
+      if (!src || !boxImg) return;
+      boxImg.src = src;
+      boxImg.alt = "原始展板";
+      box.classList.add("is-open");
+      box.setAttribute("aria-hidden", "false");
+    });
+  });
 })();

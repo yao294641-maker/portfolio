@@ -18,7 +18,13 @@
 <header class="nav" id="nav">
   <div class="container nav__inner">
     <a class="brand" href="../index.html">
-      <span class="brand__mark">WY</span>
+      <span class="brand__mark">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path class="brand-mark" d="M6 7h20v18H6z" opacity="0"/>
+          <polyline class="brand-wire" points="4,7 10,22 16,12 22,22 28,7"/>
+          <path class="brand-wire" d="M19 12c0-3 2-5 5-5s5 2 5 5-2 5-5 5"/>
+        </svg>
+      </span>
       <span class="brand__name">Wang Yao</span>
     </a>
     <nav class="nav__menu" id="menu">
@@ -29,6 +35,9 @@
       <a href="../index.html#contact">联系</a>
     </nav>
     <div class="nav__right">
+      <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
       <a class="btn btn--ghost" href="../index.html#works">全部作品 <span class="btn__arrow">↗</span></a>
       <button class="nav__burger" id="burger" aria-label="打开菜单" aria-expanded="false">
         <span></span><span></span>

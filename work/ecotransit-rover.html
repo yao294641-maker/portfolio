@@ -18,7 +18,13 @@
 <header class="nav" id="nav">
   <div class="container nav__inner">
     <a class="brand" href="../index.html">
-      <span class="brand__mark">WY</span>
+      <span class="brand__mark">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path class="brand-mark" d="M6 7h20v18H6z" opacity="0"/>
+          <polyline class="brand-wire" points="4,7 10,22 16,12 22,22 28,7"/>
+          <path class="brand-wire" d="M19 12c0-3 2-5 5-5s5 2 5 5-2 5-5 5"/>
+        </svg>
+      </span>
       <span class="brand__name">Wang Yao</span>
     </a>
     <nav class="nav__menu" id="menu">
@@ -29,6 +35,9 @@
       <a href="../index.html#contact">联系</a>
     </nav>
     <div class="nav__right">
+      <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
       <a class="btn btn--ghost" href="../index.html#works">全部作品 <span class="btn__arrow">↗</span></a>
       <button class="nav__burger" id="burger" aria-label="打开菜单" aria-expanded="false">
         <span></span><span></span>
@@ -37,80 +46,52 @@
   </div>
 </header>
 
+<!-- ================= FULL-WIDTH HERO ================= -->
+<figure class="proj-hero-full" data-drift>
+  <img src="../assets/img/rover-cover.jpg" alt="EcoTransit Rover 智能化移动厨余垃圾处理车整体形态" fetchpriority="high">
+  <div class="proj-hero-full__frame" data-reveal>
+    <div>
+      <p class="eyebrow" style="color:rgba(255,255,255,0.75); border-color:rgba(255,255,255,0.4);">Object Study — 02 / 05</p>
+      <h1 data-split>EcoTransit Rover</h1>
+      <p class="proj-sub-overlay">让厨余垃圾在园区内完成自我转化<br><span lang="en" style="font-size:14px;opacity:0.65;">Enabling kitchen waste to self-transform within the park</span></p>
+      <ul class="proj-tags" style="margin-top:14px;">
+        <li>移动垃圾处理</li>
+        <li>就地资源化</li>
+        <li>服务系统</li>
+        <li>APP 交互</li>
+      </ul>
+    </div>
+  </div>
+  <div class="proj-hero-full__meta" aria-hidden="true">
+    <span>Year</span><b>2022 — 2023</b>
+    <span>Unit</span><b>Nanjing Forestry University</b>
+    <span>Ref</span><b>WY—23—ER—02</b>
+  </div>
+</figure>
+
 <main class="proj container">
-
-  <!-- ================= HEAD ================= -->
-  <header class="proj-head">
-    <div class="proj-head__top">
-      <p class="eyebrow">Object Study — 02 / 05</p>
-      <p class="mono">2022 — 2023 · Nanjing Forestry University</p>
-    </div>
-
-    <div class="proj-head__main">
-      <div>
-        <h1 class="proj-title" data-split>EcoTransit<br>Rover</h1>
-        <p class="proj-sub">让厨余垃圾在园区内完成自我转化</p>
-        <p class="proj-sub-en" lang="en">Enabling kitchen waste to self-transform within the park</p>
-        <ul class="proj-tags">
-          <li>移动垃圾处理</li>
-          <li>就地资源化</li>
-          <li>服务系统</li>
-          <li>APP 交互</li>
-        </ul>
-      </div>
-
-      <div class="proj-meta">
-        <div class="proj-meta__row"><span>Year</span><b>2022 — 2023</b></div>
-        <div class="proj-meta__row"><span>Unit</span><b>南京林业大学</b></div>
-        <div class="proj-meta__row"><span>Type</span><b>产品系统 / 服务设计</b></div>
-        <div class="proj-meta__row"><span>Method</span><b>服务蓝图 · 用户旅程 · APP</b></div>
-        <div class="proj-meta__foot">
-          <span class="barcode" aria-hidden="true"></span>
-          <span class="mono">Ref. WY—23—ER—02</span>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- ================= HERO ================= -->
-  <figure class="proj-hero" data-drift>
-    <div class="proj-hero__frame pan" data-pan>
-      <img src="../assets/img/rover-cover.jpg" alt="EcoTransit Rover 智能化移动厨余垃圾处理车整体形态" fetchpriority="high">
-      <div class="proj-hero__hud">
-        <span class="mono">Fig. 01 — Mobile micro-factory</span>
-        <span class="mono">On-site resource circulation</span>
-      </div>
-    </div>
-    <figcaption class="proj-hero__cap">
-      <span>移动式微型工厂 / 园区内就地资源化</span>
-      <span lang="en">Collect · Crush · Ferment · Transform</span>
-    </figcaption>
-  </figure>
 
   <!-- mobile module index -->
   <nav class="proj-index" aria-label="模块索引">
-    <a href="#m01">01 简介</a>
-    <a href="#m02">02 研究</a>
-    <a href="#m03">03 产品</a>
-    <a href="#m04">04 系统</a>
-    <a href="#m05">05 APP</a>
-    <a href="#m06">06 展板</a>
+    <a href="#m01">简介</a>
+    <a href="#m02">研究</a>
+    <a href="#m03">产品</a>
+    <a href="#m04">系统</a>
+    <a href="#m05">APP</a>
   </nav>
 
   <div class="proj-body">
 
     <!-- ================= RAIL ================= -->
     <aside class="proj-rail">
-      <p class="rail__title mono">Index / 模块</p>
       <nav class="rail" aria-label="作品详情模块">
-        <a href="#m01" class="is-active"><i>01</i><b>设计简介</b></a>
-        <a href="#m02"><i>02</i><b>背景与研究</b></a>
-        <a href="#m03"><i>03</i><b>产品与核心特征</b></a>
-        <a href="#m04"><i>04</i><b>Persona 与服务系统</b></a>
-        <a href="#m05"><i>05</i><b>APP 交互</b></a>
-        <a href="#m06"><i>06</i><b>原始展板</b></a>
+        <div class="rail-progress"><div class="rail-progress__fill" id="railFill"></div></div>
+        <a href="#m01" class="is-active"><b>设计简介</b></a>
+        <a href="#m02"><b>背景与研究</b></a>
+        <a href="#m03"><b>产品与特征</b></a>
+        <a href="#m04"><b>Persona 系统</b></a>
+        <a href="#m05"><b>APP 交互</b></a>
       </nav>
-      <p class="rail__note mono">06 Modules<br>Scroll ↓</p>
     </aside>
 
     <article class="proj-main">
@@ -145,9 +126,8 @@
             </dl>
           </div>
         </div>
+        <a class="plate-link" href="#lightbox" data-plate="../assets/img/rover-original-intro.jpg" aria-label="查看原始展板 PDF 第 7 页">查看原始展板（PDF P.07） <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
       </section>
-
-      <!-- ============ 02 BACKGROUND & RESEARCH ============ -->
       <section class="mod" id="m02" aria-labelledby="m02-title">
         <header class="mod__head" data-reveal>
           <span class="mod__no">02</span>
@@ -238,16 +218,55 @@
             </div>
           </div>
 
-          <div class="plans" data-reveal>
-            <table>
-              <caption>全球有机废弃物资源化率趋势（2010—2050）</caption>
-              <thead>
-                <tr><th scope="col">指标</th><th scope="col">2010</th><th scope="col">2020</th><th scope="col">2030</th><th scope="col">2040</th><th scope="col">2050</th></tr>
-              </thead>
-              <tbody>
-                <tr><td><b>资源化率</b></td><td><span>13%</span></td><td><span>25%</span></td><td><span>45%</span></td><td><span>50%</span></td><td><span>70%</span></td></tr>
-              </tbody>
-            </table>
+          <div class="resource-chart" data-reveal>
+            <div class="resource-chart__header">
+              <div class="resource-chart__title">全球有机废弃物资源化率趋势 <span>2010 — 2050</span></div>
+            </div>
+            <svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="2010年资源化率13%，2020年25%，2030年45%，2040年50%，2050年70%">
+              <!-- grid -->
+              <line class="resource-chart__grid" x1="50" y1="30" x2="580" y2="30"/>
+              <line class="resource-chart__grid" x1="50" y1="72" x2="580" y2="72"/>
+              <line class="resource-chart__grid" x1="50" y1="114" x2="580" y2="114"/>
+              <line class="resource-chart__grid" x1="50" y1="156" x2="580" y2="156"/>
+              <line class="resource-chart__grid" x1="50" y1="198" x2="580" y2="198"/>
+              <!-- Y axis labels -->
+              <text class="resource-chart__label" x="38" y="34" text-anchor="end">70%</text>
+              <text class="resource-chart__label" x="38" y="76" text-anchor="end">50%</text>
+              <text class="resource-chart__label" x="38" y="118" text-anchor="end">35%</text>
+              <text class="resource-chart__label" x="38" y="160" text-anchor="end">20%</text>
+              <text class="resource-chart__label" x="38" y="202" text-anchor="end">0%</text>
+              <!-- X axis -->
+              <line class="resource-chart__axis" x1="50" y1="198" x2="580" y2="198"/>
+              <!-- Area -->
+              <path class="resource-chart__area" d="M50,185 L182,163 L314,119 L446,107 L578,60 L578,198 L50,198 Z"/>
+              <!-- Line -->
+              <polyline class="resource-chart__line" points="50,185 182,163 314,119 446,107 578,60"/>
+              <!-- Points -->
+              <circle class="resource-chart__point-base" cx="50" cy="185" r="4"/>
+              <circle class="resource-chart__point" cx="50" cy="185" r="3"/>
+              <circle class="resource-chart__point-base" cx="182" cy="163" r="4"/>
+              <circle class="resource-chart__point" cx="182" cy="163" r="3"/>
+              <circle class="resource-chart__point-base" cx="314" cy="119" r="4"/>
+              <circle class="resource-chart__point" cx="314" cy="119" r="3"/>
+              <circle class="resource-chart__highlight" cx="314" cy="96" r="16"/>
+              <text fill="#fff" font-size="10" font-weight="600" x="314" y="100" text-anchor="middle" font-family="Inter, sans-serif">45%</text>
+              <circle class="resource-chart__point-base" cx="446" cy="107" r="4"/>
+              <circle class="resource-chart__point" cx="446" cy="107" r="3"/>
+              <circle class="resource-chart__highlight" cx="578" cy="82" r="18"/>
+              <text fill="#fff" font-size="11" font-weight="600" x="578" y="86" text-anchor="middle" font-family="Inter, sans-serif">70%</text>
+              <circle class="resource-chart__point-base" cx="578" cy="60" r="4"/>
+              <circle class="resource-chart__point" cx="578" cy="60" r="3"/>
+              <!-- Labels on points -->
+              <text class="resource-chart__label" x="50" y="174" text-anchor="middle">13%</text>
+              <text class="resource-chart__label" x="182" y="152" text-anchor="middle">25%</text>
+              <text class="resource-chart__label" x="446" y="96" text-anchor="middle">50%</text>
+              <!-- X axis labels -->
+              <text class="resource-chart__label" x="50" y="215" text-anchor="middle">2010</text>
+              <text class="resource-chart__label" x="182" y="215" text-anchor="middle">2020</text>
+              <text class="resource-chart__label" x="314" y="215" text-anchor="middle">2030</text>
+              <text class="resource-chart__label" x="446" y="215" text-anchor="middle">2040</text>
+              <text class="resource-chart__label" x="578" y="215" text-anchor="middle">2050</text>
+            </svg>
           </div>
 
           <figure class="scene-strip" data-zoom data-pan>
@@ -260,33 +279,13 @@
               <h3>五类现场痛点 / Field Pain Points</h3>
               <span class="mono">大型园区 / 会展中心</span>
             </div>
-            <ol class="layers">
-              <li class="layer">
-                <i>01</i>
-                <div><b>临时堆放厨余垃圾</b><span>Temporary Storage</span></div>
-                <p>厨余高含水，短时即发臭。</p>
-              </li>
-              <li class="layer">
-                <i>02</i>
-                <div><b>渗液清洗困难</b><span>Cleaning</span></div>
-                <p>除味、清洗频次与用水量增加。</p>
-              </li>
-              <li class="layer">
-                <i>03</i>
-                <div><b>人工推车巡回收集</b><span>Manual Collection</span></div>
-                <p>距离远、点位多；重体力、易遗漏。</p>
-              </li>
-              <li class="layer">
-                <i>04</i>
-                <div><b>外运成本高</b><span>External Transport</span></div>
-                <p>费用高、碳排高；废弃物利用率低。</p>
-              </li>
-              <li class="layer">
-                <i>05</i>
-                <div><b>职业健康风险</b><span>Occupational Health</span></div>
-                <p>人员频繁接触高湿垃圾。</p>
-              </li>
-            </ol>
+            <div class="pain-cards">
+              <article class="pain-card"><span class="pain-card__no">01</span><div class="pain-card__body"><h4>临时堆放厨余垃圾</h4><p>厨余高含水，短时即发臭，缺乏及时处理手段。</p></div></article>
+              <article class="pain-card"><span class="pain-card__no">02</span><div class="pain-card__body"><h4>渗液清洗困难</h4><p>除味、清洗频次与用水量增加，卫生难达标。</p></div></article>
+              <article class="pain-card"><span class="pain-card__no">03</span><div class="pain-card__body"><h4>人工推车巡回收集</h4><p>距离远、点位多；重体力、易遗漏。</p></div></article>
+              <article class="pain-card"><span class="pain-card__no">04</span><div class="pain-card__body"><h4>外运成本高</h4><p>费用高、碳排高；废弃物利用率低。</p></div></article>
+              <article class="pain-card"><span class="pain-card__no">05</span><div class="pain-card__body"><h4>职业健康风险</h4><p>人员频繁接触高湿垃圾，职业暴露风险大。</p></div></article>
+            </div>
           </div>
 
           <div data-reveal>
@@ -302,6 +301,7 @@
               <article class="d-item"><i>05</i><div><h4>指标</h4><p>缺 KPI 牵引，难以对齐“资源化率 / 减排”目标。</p></div></article>
             </div>
           </div>
+          <a class="plate-link" href="#lightbox" data-plate="../assets/img/rover-original-research.jpg">查看原始展板（PDF P.08） <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
         </div>
       </section>
 
@@ -404,6 +404,7 @@
               <li class="layer"><i>04</i><div><b>沃肥产出</b><span>资源化落地</span></div><p>产出有机肥基料，供园区绿化。</p></li>
             </ol>
           </div>
+          <a class="plate-link" href="#lightbox" data-plate="../assets/img/rover-original-product.jpg">查看原始展板（PDF P.09） <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
         </div>
       </section>
 
@@ -543,10 +544,10 @@
               </tbody>
             </table>
           </div>
+          <a class="plate-link" href="#lightbox" data-plate="../assets/img/rover-original-system.jpg">查看原始展板（PDF P.10） <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
         </div>
       </section>
 
-      <!-- ============ 05 APP ============ -->
       <section class="mod" id="m05" aria-labelledby="m05-title">
         <header class="mod__head" data-reveal>
           <span class="mod__no">05</span>
@@ -558,208 +559,117 @@
         </header>
 
         <div class="mod__body app-case">
+          <!-- ===== 居民端 ===== -->
           <section class="app-role app-role--resident" aria-labelledby="app-resident-title">
             <div class="mini-head" data-reveal>
               <h3 id="app-resident-title">居民端 · 01—06</h3>
               <span class="mono">Resident App</span>
             </div>
 
-            <div class="app-ui-gallery">
-              <figure class="app-ui-figure form-strip" data-zoom data-reveal>
-                <img src="../assets/img/rover-app-resident.jpg" alt="居民端选择身份、用户首页、呼叫车辆、投递入口、我的积分与沃肥进度界面原图" loading="lazy">
-                <figcaption class="proj-cap"><span>居民端界面与功能分布</span><span class="mono">01 — 06</span></figcaption>
-              </figure>
-            </div>
+            <div class="app-proto-layout">
+              <div class="app-proto" data-reveal>
+                <div class="app-proto__phone">
+                  <div class="app-proto__screen" data-resident-screen>
+                    <img src="../assets/img/rover-app-resident.jpg" alt="居民端 APP 界面预览">
+                  </div>
+                </div>
+                <span class="app-proto__phone-label">Resident · 1 of 6</span>
+              </div>
 
-            <div class="app-feature-grid">
-              <article class="app-feature" data-reveal>
-                <span class="app-feature__no">01</span>
-                <div class="app-feature__body">
+              <div class="app-proto-content">
+                <div class="app-feature-tabs" data-reveal>
+                  <button class="app-feature-tab is-active" data-target="01"><span class="app-feature-tab__no">01</span>选择身份</button>
+                  <button class="app-feature-tab" data-target="02"><span class="app-feature-tab__no">02</span>用户首页</button>
+                  <button class="app-feature-tab" data-target="03"><span class="app-feature-tab__no">03</span>呼叫车辆</button>
+                  <button class="app-feature-tab" data-target="04"><span class="app-feature-tab__no">04</span>投递入口</button>
+                  <button class="app-feature-tab" data-target="05"><span class="app-feature-tab__no">05</span>我的积分</button>
+                  <button class="app-feature-tab" data-target="06"><span class="app-feature-tab__no">06</span>沃肥进度</button>
+                </div>
+
+                <div class="app-feature-detail" data-feature="01">
                   <h4>选择身份</h4>
-                  <p>界面设计简洁，用户只需选择“居民”或“管理者”即可快速进入对应系统。</p>
-                  <p>通过身份入口区分角色，保证后续功能与权限的精准匹配。</p>
+                  <p>界面设计简洁，用户只需选择"居民"或"管理者"即可快速进入对应系统。通过身份入口区分角色，保证后续功能与权限的精准匹配。</p>
                 </div>
-              </article>
-
-              <article class="app-feature" data-reveal style="--d:60ms">
-                <span class="app-feature__no">02</span>
-                <div class="app-feature__body">
+                <div class="app-feature-detail" data-feature="02" hidden>
                   <h4>用户首页</h4>
-                  <p>首页以数据卡片形式展示“投递量、碳减排、积分”等核心指标，强化绿色行为感知。</p>
+                  <p>首页以数据卡片形式展示"投递量、碳减排、积分"等核心指标，强化绿色行为感知。</p>
                 </div>
-              </article>
-
-              <article class="app-feature" data-reveal style="--d:120ms">
-                <span class="app-feature__no">03</span>
-                <div class="app-feature__body">
+                <div class="app-feature-detail" data-feature="03" hidden>
                   <h4>呼叫车辆</h4>
-                  <p>地图交互展示车辆位置与预计到达时间，增强用户等待体验。</p>
-                  <p>用户可一键呼叫智能沃肥车，实现灵活的垃圾上门收运。</p>
+                  <p>地图交互展示车辆位置与预计到达时间，增强用户等待体验。用户可一键呼叫智能沃肥车，实现灵活的垃圾上门收运。</p>
                 </div>
-              </article>
-
-              <article class="app-feature" data-reveal>
-                <span class="app-feature__no">04</span>
-                <div class="app-feature__body">
+                <div class="app-feature-detail" data-feature="04" hidden>
                   <h4>投递入口</h4>
-                  <p>采用扫码开口方式，保障投递过程的智能化与溯源性。</p>
-                  <p>简单操作降低学习成本，避免误投或乱投。</p>
+                  <p>采用扫码开口方式，保障投递过程的智能化与溯源性。简单操作降低学习成本，避免误投或乱投。</p>
                 </div>
-              </article>
-
-              <article class="app-feature" data-reveal style="--d:60ms">
-                <span class="app-feature__no">05</span>
-                <div class="app-feature__body">
+                <div class="app-feature-detail" data-feature="05" hidden>
                   <h4>我的积分</h4>
-                  <p>积分系统将绿色行为与奖励挂钩，用户能兑换绿植或环保小礼品。</p>
-                  <p>通过可视化卡片设计强化激励，鼓励居民持续参与。</p>
+                  <p>积分系统将绿色行为与奖励挂钩，用户能兑换绿植或环保小礼品。通过可视化卡片设计强化激励，鼓励居民持续参与。</p>
+                  <aside class="app-points-inline">
+                    <span class="app-points-inline__item"><b>128<sup>kg</sup></b>厨余投放</span>
+                    <span class="app-points-inline__item"><b>73<sup>kg</sup></b>沃肥生成</span>
+                    <span class="app-points-inline__item"><b>1,036</b>积分</span>
+                  </aside>
                 </div>
-              </article>
-
-              <article class="app-feature" data-reveal style="--d:120ms">
-                <span class="app-feature__no">06</span>
-                <div class="app-feature__body">
+                <div class="app-feature-detail" data-feature="06" hidden>
                   <h4>沃肥进度</h4>
-                  <p>可视化饼图和进度条直观展示厨余垃圾转化为有机肥的比例。</p>
-                  <p>用户可以追踪每次投递的处理结果，提升参与感与信任感。</p>
+                  <p>可视化饼图和进度条直观展示厨余垃圾转化为有机肥的比例。用户可以追踪每次投递的处理结果，提升参与感与信任感。</p>
                 </div>
-              </article>
+              </div>
             </div>
           </section>
 
-          <aside class="appgrid app-points" aria-label="我的积分界面数据示例">
-            <figure class="appgrid__phone" data-zoom data-reveal>
-              <div class="appgrid__phone-screen">
-                <img src="../assets/img/app-ui.png" alt="我的积分真实界面：厨余垃圾投放累积128kg、沃肥生成累积73kg、积分累积1036，盆栽与沃土兑换" loading="lazy">
-                <span class="appgrid__hint mono">点击放大</span>
-              </div>
-              <figcaption class="proj-cap"><span>我的积分 / My Points</span><span class="mono">Feature 05</span></figcaption>
-            </figure>
-
-            <div class="appgrid__side">
-              <div class="appstats" data-reveal>
-                <div class="appstat"><b>128<sup>kg</sup></b><span>厨余垃圾投放累积</span></div>
-                <div class="appstat"><b>73<sup>kg</sup></b><span>沃肥生成累积</span></div>
-                <div class="appstat"><b>1,036<sup>分</sup></b><span>积分累积</span></div>
-              </div>
-              <div class="appcard" data-reveal style="--d:90ms">
-                <div class="appcard__head"><h4>积分兑换 / Exchange</h4><span class="mono">Redeem</span></div>
-                <div class="appcard__row"><span><b>盆栽</b></span><em>400 积分</em></div>
-                <div class="appcard__row"><span><b>沃土</b></span><em>300 积分</em></div>
-              </div>
-            </div>
-          </aside>
-
+          <!-- ===== 管理端 ===== -->
           <section class="app-role app-role--admin" aria-labelledby="app-admin-title">
             <div class="mini-head" data-reveal>
               <h3 id="app-admin-title">管理端 · 07—11</h3>
               <span class="mono">Administrator App</span>
             </div>
 
-            <div class="app-ui-gallery">
-              <figure class="app-ui-figure form-strip" data-zoom data-reveal>
-                <img src="../assets/img/rover-app-admin.jpg" alt="管理端管理员首页、溢满预警、运行设置、运维提醒与数据统计界面原图" loading="lazy">
-                <figcaption class="proj-cap"><span>管理端界面与功能分布</span><span class="mono">07 — 11</span></figcaption>
-              </figure>
-              <figure class="app-ui-figure form-strip" data-zoom data-reveal style="--d:100ms">
-                <img src="../assets/img/rover-app-screens.jpg" alt="APP界面细节：沃肥进度、系统评价、溢满预警、运行设置与数据统计" loading="lazy">
-                <figcaption class="proj-cap"><span>关键界面细节与状态</span><span class="mono">UI Screens</span></figcaption>
-              </figure>
-            </div>
+            <div class="app-proto-layout">
+              <div class="app-proto" data-reveal>
+                <div class="app-proto__phone">
+                  <div class="app-proto__screen" data-admin-screen>
+                    <img src="../assets/img/rover-app-admin.jpg" alt="管理端 APP 界面预览">
+                  </div>
+                </div>
+                <span class="app-proto__phone-label">Admin · 1 of 5</span>
+              </div>
 
-            <div class="app-feature-grid">
-              <article class="app-feature" data-reveal>
-                <span class="app-feature__no">07</span>
-                <div class="app-feature__body">
+              <div class="app-proto-content">
+                <div class="app-feature-tabs" data-reveal>
+                  <button class="app-feature-tab is-active" data-target="07"><span class="app-feature-tab__no">07</span>管理员首页</button>
+                  <button class="app-feature-tab" data-target="08"><span class="app-feature-tab__no">08</span>溢满预警</button>
+                  <button class="app-feature-tab" data-target="09"><span class="app-feature-tab__no">09</span>运行设置</button>
+                  <button class="app-feature-tab" data-target="10"><span class="app-feature-tab__no">10</span>运维提醒</button>
+                  <button class="app-feature-tab" data-target="11"><span class="app-feature-tab__no">11</span>数据统计</button>
+                </div>
+
+                <div class="app-feature-detail" data-feature="07">
                   <h4>管理员首页</h4>
-                  <p>采用仪表盘式设计，核心数据显示一目了然（车辆数、运行时长、碳减排等）。</p>
-                  <p>模块化功能入口（运维、告警、数据报表）便于快速管理。</p>
+                  <p>采用仪表盘式设计，核心数据一目了然——车辆数、运行时长、碳减排等。模块化功能入口便于快速管理。</p>
                 </div>
-              </article>
-
-              <article class="app-feature" data-reveal style="--d:60ms">
-                <span class="app-feature__no">08</span>
-                <div class="app-feature__body">
+                <div class="app-feature-detail" data-feature="08" hidden>
                   <h4>溢满预警</h4>
-                  <p>当车辆或箱体即将满载时，系统推送告警卡片提醒。</p>
-                  <p>管理员可直接分配处理任务，保障运维的高效性。</p>
+                  <p>当车辆或箱体即将满载时，系统推送告警卡片提醒。管理员可直接分配处理任务，保障运维高效。</p>
                 </div>
-              </article>
-
-              <article class="app-feature" data-reveal style="--d:120ms">
-                <span class="app-feature__no">09</span>
-                <div class="app-feature__body">
+                <div class="app-feature-detail" data-feature="09" hidden>
                   <h4>运行设置</h4>
-                  <p>地图追踪车辆实时位置，管理员可调整路线和任务分配。</p>
-                  <p>支持远程参数设置，保证系统灵活可控。</p>
+                  <p>地图追踪车辆实时位置，管理员可调整路线和任务分配。支持远程参数设置，保证系统灵活可控。</p>
                 </div>
-              </article>
-
-              <article class="app-feature" data-reveal>
-                <span class="app-feature__no">10</span>
-                <div class="app-feature__body">
+                <div class="app-feature-detail" data-feature="10" hidden>
                   <h4>运维提醒</h4>
-                  <p>系统自动生成运维任务清单，提醒管理员定期检修与维护。</p>
-                  <p>通过分项记录提高可追溯性，减少设备故障率。</p>
+                  <p>系统自动生成运维任务清单，提醒定期检修与维护。分项记录提高可追溯性，减少设备故障率。</p>
                 </div>
-              </article>
-
-              <article class="app-feature" data-reveal style="--d:60ms">
-                <span class="app-feature__no">11</span>
-                <div class="app-feature__body">
+                <div class="app-feature-detail" data-feature="11" hidden>
                   <h4>数据统计</h4>
-                  <p>提供趋势图和柱状图，支持按时间、区域、指标分类分析。</p>
-                  <p>数据可导出，帮助管理者做决策和展示环保成效。</p>
+                  <p>提供趋势图和柱状图，支持按时间、区域、指标分类分析。数据可导出，帮助管理者做决策和展示环保成效。</p>
                 </div>
-              </article>
+              </div>
             </div>
           </section>
 
-          <figure class="app-case__board form-strip" data-zoom data-pan>
-            <img src="../assets/img/rover-original-app.jpg" alt="EcoTransit Rover APP设计原始全展板，完整呈现居民端01至06与管理端07至11" loading="lazy">
-            <figcaption class="proj-cap"><span>APP 设计原始全展板</span><span class="mono">PDF P.11 · 点击放大</span></figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <!-- ============ 06 ORIGINAL PLATES ============ -->
-      <section class="mod" id="m06" aria-labelledby="m06-title">
-        <header class="mod__head" data-reveal>
-          <span class="mod__no">06</span>
-          <div>
-            <p class="mod__kicker">Archive / 原始展板</p>
-            <h2 class="mod__title" id="m06-title">PDF 第 7—11 页完整记录</h2>
-          </div>
-          <p class="mod__meta">05 Plates<br>Original Pages</p>
-        </header>
-
-        <div class="mod__body">
-          <p class="plates-note" data-reveal>五张原始展板按 PDF 页序呈现，点击可放大查看原始排版与全部细节标注。</p>
-
-          <figure class="plate" data-pan data-zoom>
-            <img src="../assets/img/rover-original-intro.jpg" alt="PDF第7页原始展板：EcoTransit Rover设计简介、中英文项目陈述与四项属性" loading="lazy">
-            <figcaption class="proj-cap"><span>设计简介 / Design Statement</span><span class="mono">PDF 第 7 页</span></figcaption>
-          </figure>
-
-          <figure class="plate" data-pan data-zoom>
-            <img src="../assets/img/rover-original-research.jpg" alt="PDF第8页原始展板：背景、未来愿景、全球研究、现场痛点与系统问题" loading="lazy">
-            <figcaption class="proj-cap"><span>背景与研究 / Background &amp; Research</span><span class="mono">PDF 第 8 页</span></figcaption>
-          </figure>
-
-          <figure class="plate" data-pan data-zoom>
-            <img src="../assets/img/rover-original-product.jpg" alt="PDF第9页原始展板：产品细节、核心特征、用户使用流程与痛点对照" loading="lazy">
-            <figcaption class="proj-cap"><span>产品与核心特征 / Product Details</span><span class="mono">PDF 第 9 页</span></figcaption>
-          </figure>
-
-          <figure class="plate" data-pan data-zoom>
-            <img src="../assets/img/rover-original-system.jpg" alt="PDF第10页原始展板：Jimmy与Emmelie人物画像、系统图和五阶段服务蓝图" loading="lazy">
-            <figcaption class="proj-cap"><span>Persona 与服务系统 / Service System</span><span class="mono">PDF 第 10 页</span></figcaption>
-          </figure>
-
-          <figure class="plate" data-pan data-zoom>
-            <img src="../assets/img/rover-original-app.jpg" alt="PDF第11页原始展板：居民端与管理端共十一项APP交互功能" loading="lazy">
-            <figcaption class="proj-cap"><span>APP 交互 / App Interaction</span><span class="mono">PDF 第 11 页</span></figcaption>
-          </figure>
+          <a class="plate-link" href="#lightbox" data-plate="../assets/img/rover-original-app.jpg">查看原始展板（PDF P.11） <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></a>
         </div>
       </section>
 
